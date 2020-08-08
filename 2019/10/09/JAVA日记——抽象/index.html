@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | tree</title>
+  <title>JAVA日记——抽象类与接口 | tree</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="tree">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="抽象类当多个类中出现了相同的功能，但功能内的主体不同，这时可以进行向上进行抽取，只抽取功能定义，不抽取功能主体。 1、抽象类的特点  抽象方法一定在抽象类中  抽象方法和抽象类必须被abstract关键字修饰  抽象类不能用new创建对象，因为调用抽象类方法没有意义  抽象方法要被子类使用必须由子类复写其所有的抽象方法后，再建立子类对象调用；如果子类只复写了部分抽象方法，那么该子类还是一个抽象类">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JAVA日记——抽象类与接口">
+<meta property="og:url" content="http://yoursite.com/2019/10/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%8A%BD%E8%B1%A1/index.html">
 <meta property="og:site_name" content="tree">
+<meta property="og:description" content="抽象类当多个类中出现了相同的功能，但功能内的主体不同，这时可以进行向上进行抽取，只抽取功能定义，不抽取功能主体。 1、抽象类的特点  抽象方法一定在抽象类中  抽象方法和抽象类必须被abstract关键字修饰  抽象类不能用new创建对象，因为调用抽象类方法没有意义  抽象方法要被子类使用必须由子类复写其所有的抽象方法后，再建立子类对象调用；如果子类只复写了部分抽象方法，那么该子类还是一个抽象类">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-10-09T14:13:51.000Z">
+<meta property="article:modified_time" content="2019-10-10T14:06:49.604Z">
 <meta property="article:author" content="tree">
 <meta name="twitter:card" content="summary">
   
@@ -150,305 +154,184 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-JAVA日记——抽象" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JAVA日记——抽象类与接口
+    </h1>
+  
+
+        
+        <a href="/2019/10/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%8A%BD%E8%B1%A1/" class="archive-article-date">
+  	<time datetime="2019-10-09T14:13:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<h1 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h1><p>当多个类中出现了相同的功能，但功能内的主体不同，这时可以进行向上进行抽取，只抽取功能定义，不抽取功能主体。</p>
+<h2 id="1、抽象类的特点"><a href="#1、抽象类的特点" class="headerlink" title="1、抽象类的特点"></a>1、抽象类的特点</h2><blockquote>
+<ul>
+<li><p>抽象方法一定在抽象类中</p>
+</li>
+<li><p>抽象方法和抽象类必须被abstract关键字修饰</p>
+</li>
+<li><p>抽象类不能用new创建对象，因为调用抽象类方法没有意义</p>
+</li>
+<li><p>抽象方法要被子类使用必须由子类复写其所有的抽象方法后，再建立子类对象调用；如果子类只复写了部分抽象方法，那么该子类还是一个抽象类。</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="2、抽象类和一般类的区别"><a href="#2、抽象类和一般类的区别" class="headerlink" title="2、抽象类和一般类的区别"></a>2、抽象类和一般类的区别</h2><blockquote>
+<p>抽象类和一般类没有太大的区别，两个类描述事物的性质时没有什么区别，但是抽象类在定义功能方法时无法定义主体。</p>
+<p>抽象类比一般类多了抽象函数，在抽象类中可以定义抽象方法</p>
+<p>抽象类可以不定义抽象方法，这样做仅仅是不让该类建立对象</p>
+</blockquote>
+<p><strong><em>（注：抽象类不可以实例化）</em></strong></p>
+</blockquote>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/19/java%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80/" class="archive-article-date">
-  	<time datetime="2020-05-19T10:12:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/19/java%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80/">java总结（一）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/11/Redis%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2020-05-11T12:34:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/11/Redis%E5%85%A5%E9%97%A8/">Redis入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/06/Cookeie%E5%92%8CSession/" class="archive-article-date">
-  	<time datetime="2020-05-06T11:47:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/06/Cookeie%E5%92%8CSession/">Cookeie和Session</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/03/Servlet%E5%85%A5%E9%97%A8%EF%BC%882%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-05-03T12:17:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/03/Servlet%E5%85%A5%E9%97%A8%EF%BC%882%EF%BC%89/">Servlet入门（2）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/29/Servlet%E5%85%A5%E9%97%A8%EF%BC%881%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-04-29T12:12:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/29/Servlet%E5%85%A5%E9%97%A8%EF%BC%881%EF%BC%89/">Servlet入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/22/IO%E6%B5%81/" class="archive-article-date">
-  	<time datetime="2020-04-22T14:56:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/22/IO%E6%B5%81/">IO流(1)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/30/Java%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E2%80%94%E9%9B%86%E5%90%88%E7%B1%BB%EF%BC%881%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-03-30T13:03:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/30/Java%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E2%80%94%E9%9B%86%E5%90%88%E7%B1%BB%EF%BC%881%EF%BC%89/">Java日记———Collection集合类(1)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/10/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%882%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-03-10T10:26:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/10/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%882%EF%BC%89/">JAVA日记——多线程（2）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%B3%9B%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-02-09T12:40:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%B3%9B%E5%9E%8B/">JAVA日记——泛型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
       
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/11/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="archive-article-date">
-  	<time datetime="2019-11-11T13:14:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/11/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B/">JAVA日记——多线程（1）</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%8A%BD%E8%B1%A1/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/10/10/JAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%A4%9A%E6%80%81/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          JAVA基础——多态
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2019/10/08/JAVA%E7%BB%A7%E7%BB%A7%E6%89%BF%E2%80%94%E2%80%94%E7%BB%A7%E6%89%BF/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JAVA基础——继承</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a><a class="extend next" rel="next" href="/archives/page/2/">Next &amp;raquo;</a>
-    </nav>
+  
+
+  
+
   
 
 
@@ -472,8 +355,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

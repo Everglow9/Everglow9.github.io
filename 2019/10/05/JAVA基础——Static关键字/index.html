@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | tree</title>
+  <title>JAVA基础——Static关键字 | tree</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="tree">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="Static关键字Static关键字是一个修饰符，用于修饰成员（成员变量和成员函数），当成员被Static修饰后除了可以被对象调用外，还可以通过类名直接调用。 例 1234567891011121314Class Test&amp;#123;    public static void main(String [] args)    &amp;#123;        Demo t &#x3D; new Demo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JAVA基础——Static关键字">
+<meta property="og:url" content="http://yoursite.com/2019/10/05/JAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94Static%E5%85%B3%E9%94%AE%E5%AD%97/index.html">
 <meta property="og:site_name" content="tree">
+<meta property="og:description" content="Static关键字Static关键字是一个修饰符，用于修饰成员（成员变量和成员函数），当成员被Static修饰后除了可以被对象调用外，还可以通过类名直接调用。 例 1234567891011121314Class Test&amp;#123;    public static void main(String [] args)    &amp;#123;        Demo t &#x3D; new Demo">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-10-05T14:02:48.000Z">
+<meta property="article:modified_time" content="2019-10-05T14:58:17.114Z">
 <meta property="article:author" content="tree">
 <meta name="twitter:card" content="summary">
   
@@ -150,305 +154,203 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-JAVA基础——Static关键字" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JAVA基础——Static关键字
+    </h1>
+  
+
+        
+        <a href="/2019/10/05/JAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94Static%E5%85%B3%E9%94%AE%E5%AD%97/" class="archive-article-date">
+  	<time datetime="2019-10-05T14:02:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-05</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Static关键字"><a href="#Static关键字" class="headerlink" title="Static关键字"></a>Static关键字</h1><p>Static关键字是一个修饰符，用于修饰成员（成员变量和成员函数），当成员被Static修饰后除了可以被对象调用外，还可以通过类名直接调用。</p>
+<p>例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Class Test</span><br><span class="line">&#123;</span><br><span class="line">    public static void main(String [] args)</span><br><span class="line">    &#123;</span><br><span class="line">        Demo t &#x3D; new Demo();</span><br><span class="line">        t.a;</span><br><span class="line">        Demo.a;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Class Demo</span><br><span class="line">&#123;</span><br><span class="line">    Static int a &#x3D; 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Static修饰的成员的特点："><a href="#Static修饰的成员的特点：" class="headerlink" title="Static修饰的成员的特点："></a>Static修饰的成员的特点：</h3><blockquote>
+<ul>
+<li>随着类的加载而加载，随着类的消失而消失 </li>
+<li>有限于对象存在</li>
+<li>被所有对象共享</li>
+<li>可以直接被类名调用</li>
+</ul>
+</blockquote>
+<h3 id="实例变量（对象变量）和类变量（静态变量）的区别："><a href="#实例变量（对象变量）和类变量（静态变量）的区别：" class="headerlink" title="实例变量（对象变量）和类变量（静态变量）的区别："></a>实例变量（对象变量）和类变量（静态变量）的区别：</h3><blockquote>
+<h4 id="1、存放位置："><a href="#1、存放位置：" class="headerlink" title="1、存放位置："></a>1、存放位置：</h4><ul>
+<li>类变量随着类的加载而加载，随类的消失而消失，存放于方法区中；<br>类变量的生命周期最长，随着类的消失而消失。</li>
+<li>实例变量随着对象的建立而存在于堆内存中；实例变量生命周期随着对象的消失而消失。</li>
+</ul>
+</blockquote>
+<h3 id="静态变量的注意事项："><a href="#静态变量的注意事项：" class="headerlink" title="静态变量的注意事项："></a>静态变量的注意事项：</h3><blockquote>
+<ul>
+<li>静态方法只能访问静态成员；但非静态的方法可以访问静态的也可以访问非静态的。</li>
+<li>静态方法中不可以定义this和super关键字。因为静态优先于对象建立，而this指代的是本类的对象。</li>
+</ul>
+</blockquote>
+<h3 id="静态的好处和坏处："><a href="#静态的好处和坏处：" class="headerlink" title="静态的好处和坏处："></a>静态的好处和坏处：</h3><blockquote>
+<ul>
+<li><strong>好处</strong>：对象的共享数据可以进行单独空间的存储，节省内存空间，不用每一个对象都存储一份共享数据；可以直接使用类名调用。</li>
+<li><strong>坏处</strong>：生命周期过长，且访问有局限性。</li>
+</ul>
+</blockquote>
+<h3 id="什么时候使用静态："><a href="#什么时候使用静态：" class="headerlink" title="什么时候使用静态："></a>什么时候使用静态：</h3><blockquote>
+<ul>
+<li>①什么时候使用静态变量：当对象中出现了共享数据时，用静态修饰该变量，单独存储在方法区供本类中所有对象访问；每个对象特有的成员定义为非静态，存放在堆内存中。</li>
+<li>②什么时候定义静态函数：当功能内部没有访问到非静态数据时，可以将该方法定义为静态方法。</li>
+</ul>
+</blockquote>
+<h3 id="静态代码块："><a href="#静态代码块：" class="headerlink" title="静态代码块："></a>静态代码块：</h3><blockquote>
+<p>静态代码块随着类的加载而执行，但是只执行一次，作用是给类进行初始化，且优先于主函数。</p>
+</blockquote>
+<p><strong>初始化优先级</strong>：  构造函数初始化 &lt; 代码块 &lt; 默认初始化 &lt; static代码块</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/19/java%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80/" class="archive-article-date">
-  	<time datetime="2020-05-19T10:12:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/19/java%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80/">java总结（一）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/11/Redis%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2020-05-11T12:34:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/11/Redis%E5%85%A5%E9%97%A8/">Redis入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/06/Cookeie%E5%92%8CSession/" class="archive-article-date">
-  	<time datetime="2020-05-06T11:47:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/06/Cookeie%E5%92%8CSession/">Cookeie和Session</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/03/Servlet%E5%85%A5%E9%97%A8%EF%BC%882%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-05-03T12:17:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/03/Servlet%E5%85%A5%E9%97%A8%EF%BC%882%EF%BC%89/">Servlet入门（2）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/29/Servlet%E5%85%A5%E9%97%A8%EF%BC%881%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-04-29T12:12:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/29/Servlet%E5%85%A5%E9%97%A8%EF%BC%881%EF%BC%89/">Servlet入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/22/IO%E6%B5%81/" class="archive-article-date">
-  	<time datetime="2020-04-22T14:56:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/22/IO%E6%B5%81/">IO流(1)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/30/Java%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E2%80%94%E9%9B%86%E5%90%88%E7%B1%BB%EF%BC%881%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-03-30T13:03:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/30/Java%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E2%80%94%E9%9B%86%E5%90%88%E7%B1%BB%EF%BC%881%EF%BC%89/">Java日记———Collection集合类(1)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/10/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%882%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-03-10T10:26:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/10/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%882%EF%BC%89/">JAVA日记——多线程（2）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%B3%9B%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-02-09T12:40:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%B3%9B%E5%9E%8B/">JAVA日记——泛型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
       
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/11/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="archive-article-date">
-  	<time datetime="2019-11-11T13:14:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/11/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B/">JAVA日记——多线程（1）</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/05/JAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94Static%E5%85%B3%E9%94%AE%E5%AD%97/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/10/08/JAVA%E7%BB%A7%E7%BB%A7%E6%89%BF%E2%80%94%E2%80%94%E7%BB%A7%E6%89%BF/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          JAVA基础——继承
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2019/10/03/%E4%B8%A4%E6%95%B0%E4%BA%92%E6%8D%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">两数互换</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a><a class="extend next" rel="next" href="/archives/page/2/">Next &amp;raquo;</a>
-    </nav>
+  
+
+  
+
   
 
 
@@ -472,8 +374,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

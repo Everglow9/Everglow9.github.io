@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | tree</title>
+  <title>IO流(1) | tree</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="tree">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="一、字节流和字符流 1、概念“流”代表能产生数据的数据源对象或可以接收数据的接收端对象；“流”屏蔽了I&#x2F;O设备中处理数据的细节。java中IO类中流可以分为字节流和字符流；字节流基类为：InputStream和OutputStream;字符流基类为：Reader和Writer。 2、区别字符流专门用于处理纯文本的数据；而字节流通常用于处于媒体文件等非纯文本文件； 3、如何选取合适的流对象在编程过">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IO流(1)">
+<meta property="og:url" content="http://yoursite.com/2020/04/22/IO%E6%B5%81/index.html">
 <meta property="og:site_name" content="tree">
+<meta property="og:description" content="一、字节流和字符流 1、概念“流”代表能产生数据的数据源对象或可以接收数据的接收端对象；“流”屏蔽了I&#x2F;O设备中处理数据的细节。java中IO类中流可以分为字节流和字符流；字节流基类为：InputStream和OutputStream;字符流基类为：Reader和Writer。 2、区别字符流专门用于处理纯文本的数据；而字节流通常用于处于媒体文件等非纯文本文件； 3、如何选取合适的流对象在编程过">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-22T14:56:44.000Z">
+<meta property="article:modified_time" content="2020-04-27T14:47:17.594Z">
 <meta property="article:author" content="tree">
 <meta name="twitter:card" content="summary">
   
@@ -150,305 +154,239 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-IO流" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/19/java%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80/" class="archive-article-date">
-  	<time datetime="2020-05-19T10:12:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-19</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/19/java%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80/">java总结（一）</a>
+    <h1 class="article-title" itemprop="name">
+      IO流(1)
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/11/Redis%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2020-05-11T12:34:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/11/Redis%E5%85%A5%E9%97%A8/">Redis入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/06/Cookeie%E5%92%8CSession/" class="archive-article-date">
-  	<time datetime="2020-05-06T11:47:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/06/Cookeie%E5%92%8CSession/">Cookeie和Session</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/03/Servlet%E5%85%A5%E9%97%A8%EF%BC%882%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-05-03T12:17:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/03/Servlet%E5%85%A5%E9%97%A8%EF%BC%882%EF%BC%89/">Servlet入门（2）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/29/Servlet%E5%85%A5%E9%97%A8%EF%BC%881%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-04-29T12:12:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/29/Servlet%E5%85%A5%E9%97%A8%EF%BC%881%EF%BC%89/">Servlet入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/22/IO%E6%B5%81/" class="archive-article-date">
+        
+        <a href="/2020/04/22/IO%E6%B5%81/" class="archive-article-date">
   	<time datetime="2020-04-22T14:56:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-22</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/22/IO%E6%B5%81/">IO流(1)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+        
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/30/Java%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E2%80%94%E9%9B%86%E5%90%88%E7%B1%BB%EF%BC%881%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-03-30T13:03:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/30/Java%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E2%80%94%E9%9B%86%E5%90%88%E7%B1%BB%EF%BC%881%EF%BC%89/">Java日记———Collection集合类(1)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/10/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%882%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-03-10T10:26:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/10/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%882%EF%BC%89/">JAVA日记——多线程（2）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%B3%9B%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-02-09T12:40:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%B3%9B%E5%9E%8B/">JAVA日记——泛型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
+    <div class="article-entry" itemprop="articleBody">
       
-        </div></section>
+        <blockquote>
+<h2 id="一、字节流和字符流"><a href="#一、字节流和字符流" class="headerlink" title="一、字节流和字符流"></a>一、字节流和字符流</h2><blockquote>
+<h3 id="1、概念"><a href="#1、概念" class="headerlink" title="1、概念"></a><strong>1、概念</strong></h3><p>“流”代表能产生数据的数据源对象或可以接收数据的接收端对象；“流”屏蔽了I/O设备中处理数据的细节。java中IO类中流可以分为字节流和字符流；字节流基类为：InputStream和OutputStream;字符流基类为：Reader和Writer。</p>
+<h3 id="2、区别"><a href="#2、区别" class="headerlink" title="2、区别"></a><strong>2、区别</strong></h3><p>字符流专门用于处理纯文本的数据；而字节流通常用于处于媒体文件等非纯文本文件；</p>
+<h3 id="3、如何选取合适的流对象"><a href="#3、如何选取合适的流对象" class="headerlink" title="3、如何选取合适的流对象"></a><strong>3、如何选取合适的流对象</strong></h3><p>在编程过程中选取合适的流对象要做到三个明确。</p>
+<p>1、明确源和目的：源(输入流)：InputStream、Reader<br></p>
+<p>&#8195&#8195&#8195 &#8195 &#8195 &#8195 &#8195 目的(输出流)：OutputStream、Writer</p>
+2、明确操作数据是否为纯文本：是(字符流)：Writer、Reader<br>
+<p>&#8195&#8195&#8195 &#8195 &#8195 &#8195  &#8195 &#8195 &#8195 &#8195 &#8195 &#8195否(字节流)： OutputStream、Writer</p>
+3、明确具体的对象通过设备区分：源设备：内存、硬盘、键盘<br>
+<p>&#8195&#8195&#8195 &#8195&#8195 &#8195 &#8195  &#8195 &#8195 &#8195 &#8195 &#8195 &#8195目的设备： 内存、硬盘、控制台</p>
+</blockquote>
+<h2 id="二、输入流和输出流"><a href="#二、输入流和输出流" class="headerlink" title="二、输入流和输出流"></a>二、输入流和输出流</h2><blockquote>
+<h3 id="1、概念-1"><a href="#1、概念-1" class="headerlink" title="1、概念"></a><strong>1、概念</strong></h3><p>java中IO类分为输入和输出两部分。输入流（读取流）基类为InputStream和Reader，通常他们的派生类都含义read()方法；输出流（写入流）基类OutputStream和Writer,他们的派生类都含义writer()方法。</p>
+<h3 id="2、输出流-写入流-操作步骤"><a href="#2、输出流-写入流-操作步骤" class="headerlink" title="2、输出流(写入流)操作步骤"></a><strong>2、输出流(写入流)操作步骤</strong></h3><h3 id="以FileWriter为例"><a href="#以FileWriter为例" class="headerlink" title="以FileWriter为例"></a>以FileWriter为例</h3><ul>
+<li>①：创建一个FileWriter对象，并指定被操作的文件。该文件会被创建到指定目录下，如果该目录下有同名文件则将覆盖；若未指定目录则会创建到当前对象的存储路径下。</li>
+</ul>
+</blockquote>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FilterWriter fw &#x3D; new FilterWriter(&quot;test.txt&quot;);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<ul>
+<li>②：调用writer方法将字符串写入流中，并输出到指定文件中。</li>
+</ul>
+</blockquote>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fw.writer(&quot;abc&quot;);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<ul>
+<li>③：刷新流对象中存储的数据，并将数据刷到指定的位置</li>
+</ul>
+</blockquote>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fw.flush();</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<ul>
+<li>④：关闭流资源，关闭前会进行一次flush操作；和flush不同的是，flush刷新后可以继续使用该流对象；而close刷新后，流对象关闭。<h3 id="3、输入流-读取流-操作步骤"><a href="#3、输入流-读取流-操作步骤" class="headerlink" title="3、输入流(读取流)操作步骤"></a><strong>3、输入流(读取流)操作步骤</strong></h3>步骤和输出流相差无几，但输入流中的close()将不会刷新流，而是直接关闭流。</li>
+</ul>
+</blockquote>
+<h2 id="三、读写-取缓存区"><a href="#三、读写-取缓存区" class="headerlink" title="三、读写/取缓存区"></a>三、读写/取缓存区</h2><blockquote>
+<h3 id="1、概念-2"><a href="#1、概念-2" class="headerlink" title="1、概念"></a><strong>1、概念</strong></h3><p>缓冲区的出现是为了提高流的操作效率，在创建缓冲区之前，必须先有流对象</p>
+<h3 id="2、创建步骤"><a href="#2、创建步骤" class="headerlink" title="2、创建步骤"></a><strong>2、创建步骤</strong></h3><p>①：创建缓冲区之前写入流对象 </p>
+</blockquote>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FileWriter fw &#x3D; new FileWriter(&quot;my.txt&quot;);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<p>②：为提高读写效率，加入了缓冲技术，只要将需要被提高效率的流对象作为参数传递给缓冲区的构造函数即可</p>
+</blockquote>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BufferedWriter bw &#x3D; new BufferedWriter(fw);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<p>③：只要到了缓冲区就要刷新</p>
+</blockquote>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bw.flush();</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<p>④：释放资源，关闭缓冲区就关闭了流对象</p>
+</blockquote>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bw.close();</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<p>注：BufferedReader读取数据的特有方法为readLine(),底层是read。</p>
+<h3 id="3、转换流"><a href="#3、转换流" class="headerlink" title="3、转换流"></a><strong>3、转换流</strong></h3><p>转换流主要是字符流转字节流，转换率的真正目的主要是可以指定码表进行编码转换，默认为GBK，可指定为UFT-8；有两个类型InputStreanReader和OutputStreamWriter。<br>例</p>
+</blockquote>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new InputStreamReader(new InputStream(&quot;new.txt&quot;),&quot;UTF-8&quot;)</span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/11/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="archive-article-date">
-  	<time datetime="2019-11-11T13:14:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/11/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B/">JAVA日记——多线程（1）</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/22/IO%E6%B5%81/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/04/29/Servlet%E5%85%A5%E9%97%A8%EF%BC%881%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Servlet入门
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2020/03/30/Java%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E2%80%94%E9%9B%86%E5%90%88%E7%B1%BB%EF%BC%881%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java日记———Collection集合类(1)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a><a class="extend next" rel="next" href="/archives/page/2/">Next &amp;raquo;</a>
-    </nav>
+  
+
+  
+
   
 
 
@@ -472,8 +410,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

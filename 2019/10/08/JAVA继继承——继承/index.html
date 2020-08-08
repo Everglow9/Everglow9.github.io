@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | tree</title>
+  <title>JAVA基础——继承 | tree</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="tree">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="继承利用继承可以基于已存在的类构造一个新类。继承提高了代码的复用性，可以让类与类之间产生关系，有了这个关系才有了多态的特性。继承必须是类与类之间有所属关系，“is—a”关系是继承的一个明显特征。java语言支持多层继承和单继承，不支持多继承。因为多继承容易带来安全隐患。 1、为什么在具体调用父类的功能时要创建最子类对象 a、可能父类不能创建对象，如：抽象类； b、创建子类对象可以使用更多的功能。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JAVA基础——继承">
+<meta property="og:url" content="http://yoursite.com/2019/10/08/JAVA%E7%BB%A7%E7%BB%A7%E6%89%BF%E2%80%94%E2%80%94%E7%BB%A7%E6%89%BF/index.html">
 <meta property="og:site_name" content="tree">
+<meta property="og:description" content="继承利用继承可以基于已存在的类构造一个新类。继承提高了代码的复用性，可以让类与类之间产生关系，有了这个关系才有了多态的特性。继承必须是类与类之间有所属关系，“is—a”关系是继承的一个明显特征。java语言支持多层继承和单继承，不支持多继承。因为多继承容易带来安全隐患。 1、为什么在具体调用父类的功能时要创建最子类对象 a、可能父类不能创建对象，如：抽象类； b、创建子类对象可以使用更多的功能。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-10-08T14:07:40.000Z">
+<meta property="article:modified_time" content="2019-10-09T01:22:10.328Z">
 <meta property="article:author" content="tree">
 <meta name="twitter:card" content="summary">
   
@@ -150,305 +154,200 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-JAVA继继承——继承" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JAVA基础——继承
+    </h1>
+  
+
+        
+        <a href="/2019/10/08/JAVA%E7%BB%A7%E7%BB%A7%E6%89%BF%E2%80%94%E2%80%94%E7%BB%A7%E6%89%BF/" class="archive-article-date">
+  	<time datetime="2019-10-08T14:07:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-08</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><p>利用继承可以基于已存在的类构造一个新类。继承提高了代码的复用性，可以让类与类之间产生关系，有了这个关系才有了多态的特性。继承必须是类与类之间有所属关系，“is—a”关系是继承的一个明显特征。<br>java语言支持多层继承和单继承，不支持多继承。因为多继承容易带来安全隐患。</p>
+<h2 id="1、为什么在具体调用父类的功能时要创建最子类对象"><a href="#1、为什么在具体调用父类的功能时要创建最子类对象" class="headerlink" title="1、为什么在具体调用父类的功能时要创建最子类对象"></a>1、为什么在具体调用父类的功能时要创建最子类对象</h2><blockquote>
+<p>a、可能父类不能创建对象，如：抽象类；</p>
+<p>b、创建子类对象可以使用更多的功能。包括基本的和特有的；</p>
+</blockquote>
+<h2 id="2、子父类中的变量"><a href="#2、子父类中的变量" class="headerlink" title="2、子父类中的变量"></a>2、子父类中的变量</h2><blockquote>
+<p>如果子类中出现非私有的同名成员变量是，子类访问本类中的变量用this，子类访问父类的同名变量用super。</p>
+<p>例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;class Fu</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line">  int age &#x3D; 3;</span><br><span class="line">&gt;&gt;&#125;    </span><br><span class="line">  </span><br><span class="line">&gt;&gt;class Zi extends Fu  &#x2F;&#x2F;关键字extends表示继承，a extends b， a继承b。</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line"> int age &#x3D; 4；</span><br><span class="line"> System.out.println(super.age) &#x2F;&#x2F;打印父类的age，结果为3.</span><br><span class="line">  System.out.println(this.age) &#x2F;&#x2F;打印本类（子类）的age，结果为4；</span><br><span class="line">&gt;&gt;&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="3、子父类中的函数"><a href="#3、子父类中的函数" class="headerlink" title="3、子父类中的函数"></a>3、子父类中的函数</h2><blockquote>
+<p>当子类中出现和父类一样的函数时，子类对象调用该函数时，会运行子类函数的内容。如同子类函数覆盖父类函数一样。这是函数的另一个特性：**<em>重写**</em>。因此当子类继承父类并延袭父类的功能，虽然子类具备这些功能，但功能的内容却与父类不一致；此时没有必要从新定义新功能，而是使用覆盖特性，保留父类的功能定义，并重写该功能。</p>
+</blockquote>
+<h2 id="4、覆盖的注意事项"><a href="#4、覆盖的注意事项" class="headerlink" title="4、覆盖的注意事项"></a>4、覆盖的注意事项</h2><blockquote>
+<ul>
+<li><p>子类覆盖父类，必须保证子类的权限大于等于父类权限，否则编译失败。</p>
+<p>   public &gt; protected &gt; private</p>
+</li>
+<li><p>静态只能覆盖静态。</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="5、子父类中的构造函数"><a href="#5、子父类中的构造函数" class="headerlink" title="5、子父类中的构造函数"></a>5、子父类中的构造函数</h2><blockquote>
+<p>在对子类对象进行初始化时，父类构造器也会运行。因为子类构造函数的第一行默认有一条隐式语句super();super()会调用父类构造器中空参数的构造函数，当然也可以定义super语句的方式来指定调用的构造函数。</p>
+<p>例:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;class Fu</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line"> int age;   </span><br><span class="line"> Fu(int age)</span><br><span class="line"> &#123;</span><br><span class="line">     this.age &#x3D; age;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> Fu() &#123;&#125;</span><br><span class="line"> &#125;    </span><br><span class="line"></span><br><span class="line">&gt;&gt;class Zi1 extends Fu</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line"> Zi1()</span><br><span class="line"> &#123;</span><br><span class="line">     super();&#x2F;&#x2F;调用空参数的父类构造函数。   </span><br><span class="line"> &#125;</span><br><span class="line">&gt;&gt;&#125;</span><br><span class="line"> </span><br><span class="line">&gt;&gt;class Zi2 extends Fu</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line">   Zi2()</span><br><span class="line">   &#123;</span><br><span class="line">       super(5);&#x2F;&#x2F;调用父类有参数age的构造函数。</span><br><span class="line">   &#125;</span><br><span class="line">&gt;&gt;&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="6、为什么子类一定要访问父类的构造函数"><a href="#6、为什么子类一定要访问父类的构造函数" class="headerlink" title="6、为什么子类一定要访问父类的构造函数"></a>6、为什么子类一定要访问父类的构造函数</h2><blockquote>
+<p>因为父类中的数据子类可以直接获取。子类对象在建立时，需要先查看父类是如何对这些数据进行初始化的。所以子类在对象初始化时要先访问父类构造函数。</p>
+</blockquote>
+<h2 id="7、子类实例化过程"><a href="#7、子类实例化过程" class="headerlink" title="7、子类实例化过程"></a>7、子类实例化过程</h2><blockquote>
+<p>子类中所有的构造函数默认都会访问父类中空参数的构造函数，因为子类中每一个构造函数第一行都有一句隐式的super()；当父类中没有空参数的构造函数时，必须手动的通过super语句来指定要访问的父类构造函数。当然，子类的构造函数的第一行业可以手动的指定this语句来访问本类中的构造函数。子类中必须有一个构造函数访问父类的构造函数。</p>
+<p>例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;class Fu</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line">   Fu() &#123;&#125;</span><br><span class="line">&gt;&gt;&#125;</span><br><span class="line"></span><br><span class="line">&gt;&gt;class Zo</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line">   int age;</span><br><span class="line">   Zi(int age)</span><br><span class="line">   &#123;</span><br><span class="line">       this();&#x2F;&#x2F;访问本类中空参数的构造函数 </span><br><span class="line">       this.age &#x3D; age;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&gt;&gt;Zi()</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line">   super();&#x2F;&#x2F;访问父类无参构造函数。</span><br><span class="line"> &#125;</span><br><span class="line">&gt;&gt;&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</blockquote>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/19/java%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80/" class="archive-article-date">
-  	<time datetime="2020-05-19T10:12:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/19/java%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80/">java总结（一）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/11/Redis%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2020-05-11T12:34:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/11/Redis%E5%85%A5%E9%97%A8/">Redis入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/06/Cookeie%E5%92%8CSession/" class="archive-article-date">
-  	<time datetime="2020-05-06T11:47:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/06/Cookeie%E5%92%8CSession/">Cookeie和Session</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/03/Servlet%E5%85%A5%E9%97%A8%EF%BC%882%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-05-03T12:17:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/03/Servlet%E5%85%A5%E9%97%A8%EF%BC%882%EF%BC%89/">Servlet入门（2）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/29/Servlet%E5%85%A5%E9%97%A8%EF%BC%881%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-04-29T12:12:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/29/Servlet%E5%85%A5%E9%97%A8%EF%BC%881%EF%BC%89/">Servlet入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/22/IO%E6%B5%81/" class="archive-article-date">
-  	<time datetime="2020-04-22T14:56:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/22/IO%E6%B5%81/">IO流(1)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/30/Java%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E2%80%94%E9%9B%86%E5%90%88%E7%B1%BB%EF%BC%881%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-03-30T13:03:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/30/Java%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E2%80%94%E9%9B%86%E5%90%88%E7%B1%BB%EF%BC%881%EF%BC%89/">Java日记———Collection集合类(1)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/10/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%882%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-03-10T10:26:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/10/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%882%EF%BC%89/">JAVA日记——多线程（2）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%B3%9B%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-02-09T12:40:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%B3%9B%E5%9E%8B/">JAVA日记——泛型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
       
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/11/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="archive-article-date">
-  	<time datetime="2019-11-11T13:14:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/11/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B/">JAVA日记——多线程（1）</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/08/JAVA%E7%BB%A7%E7%BB%A7%E6%89%BF%E2%80%94%E2%80%94%E7%BB%A7%E6%89%BF/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/10/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%8A%BD%E8%B1%A1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          JAVA日记——抽象类与接口
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2019/10/05/JAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94Static%E5%85%B3%E9%94%AE%E5%AD%97/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JAVA基础——Static关键字</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a><a class="extend next" rel="next" href="/archives/page/2/">Next &amp;raquo;</a>
-    </nav>
+  
+
+  
+
   
 
 
@@ -472,8 +371,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

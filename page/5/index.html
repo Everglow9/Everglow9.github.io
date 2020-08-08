@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | tree</title>
+  <title>tree</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="tree">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://yoursite.com/page/5/index.html">
 <meta property="og:site_name" content="tree">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="tree">
@@ -152,302 +152,630 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-JA数据结构——基础概念" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/26/JA%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/">数据结构——基础概念</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/26/JA%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/" class="archive-article-date">
+  	<time datetime="2019-08-26T14:00:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-26</time>
+</a>
+        
+      </header>
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-数据：数据是描述客观事物的符号，是计算机可以操作的对象，能被计算机识别，并输入给-计算机进行处理的符号集合。文字、图片、音频等都可以称为数据。"><a href="#1-数据：数据是描述客观事物的符号，是计算机可以操作的对象，能被计算机识别，并输入给-计算机进行处理的符号集合。文字、图片、音频等都可以称为数据。" class="headerlink" title="1.数据：数据是描述客观事物的符号，是计算机可以操作的对象，能被计算机识别，并输入给  计算机进行处理的符号集合。文字、图片、音频等都可以称为数据。"></a>1.数据：数据是描述客观事物的符号，是计算机可以操作的对象，能被计算机识别，并输入给  计算机进行处理的符号集合。文字、图片、音频等都可以称为数据。</h3><h3 id="2、数据元素：数据元素是组成数据的基本单位，一般被作为整体交给计算机处理，也就是数据。"><a href="#2、数据元素：数据元素是组成数据的基本单位，一般被作为整体交给计算机处理，也就是数据。" class="headerlink" title="2、数据元素：数据元素是组成数据的基本单位，一般被作为整体交给计算机处理，也就是数据。"></a>2、数据元素：数据元素是组成数据的基本单位，一般被作为整体交给计算机处理，也就是数据。</h3><h3 id="3、数据项：一个数据元素由若干数据项组成，是最小单位。"><a href="#3、数据项：一个数据元素由若干数据项组成，是最小单位。" class="headerlink" title="3、数据项：一个数据元素由若干数据项组成，是最小单位。"></a>3、数据项：一个数据元素由若干数据项组成，是最小单位。</h3><h3 id="4、数据对象：相同性质元素的集合，是数据的子集。"><a href="#4、数据对象：相同性质元素的集合，是数据的子集。" class="headerlink" title="4、数据对象：相同性质元素的集合，是数据的子集。"></a>4、数据对象：相同性质元素的集合，是数据的子集。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">                |数据|          </span><br><span class="line">            |数据对象|数据对象|</span><br><span class="line">        数据元素|数据元素|数据元素</span><br><span class="line">数据项|数据线|数据项|数据项|数据项|数据项|</span><br></pre></td></tr></table></figure>
+<h3 id="5、数据结构：相互之间存在一种或多种特定关系的数据元素的集合。"><a href="#5、数据结构：相互之间存在一种或多种特定关系的数据元素的集合。" class="headerlink" title="5、数据结构：相互之间存在一种或多种特定关系的数据元素的集合。"></a>5、数据结构：相互之间存在一种或多种特定关系的数据元素的集合。</h3><h3 id="6、数据结构：数据结构又分为两种结构"><a href="#6、数据结构：数据结构又分为两种结构" class="headerlink" title="6、数据结构：数据结构又分为两种结构"></a>6、数据结构：数据结构又分为两种结构</h3><h4 id="a、逻辑结构：表示数据对象中数据元素之间的关系，有以下4种结构。"><a href="#a、逻辑结构：表示数据对象中数据元素之间的关系，有以下4种结构。" class="headerlink" title="a、逻辑结构：表示数据对象中数据元素之间的关系，有以下4种结构。"></a>a、逻辑结构：表示数据对象中数据元素之间的关系，有以下4种结构。</h4><ul>
+<li><h5 id="集合结构：-数据元素之间没有特定的关系。"><a href="#集合结构：-数据元素之间没有特定的关系。" class="headerlink" title="集合结构： 数据元素之间没有特定的关系。"></a>集合结构： 数据元素之间没有特定的关系。</h5></li>
+<li><h5 id="线性结构：-数据元素之间存在一对一的关系。"><a href="#线性结构：-数据元素之间存在一对一的关系。" class="headerlink" title="线性结构： 数据元素之间存在一对一的关系。"></a>线性结构： 数据元素之间存在一对一的关系。</h5></li>
+<li><h5 id="树形结构：-数据元素之间存在一对多的层次关系。"><a href="#树形结构：-数据元素之间存在一对多的层次关系。" class="headerlink" title="树形结构： 数据元素之间存在一对多的层次关系。"></a>树形结构： 数据元素之间存在一对多的层次关系。</h5></li>
+<li><h5 id="图形结构：-数据元素之间存在一对多的关系，其中每个数据元素称为结点。"><a href="#图形结构：-数据元素之间存在一对多的关系，其中每个数据元素称为结点。" class="headerlink" title="图形结构： 数据元素之间存在一对多的关系，其中每个数据元素称为结点。"></a>图形结构： 数据元素之间存在一对多的关系，其中每个数据元素称为结点。</h5></li>
+</ul>
+<h4 id="b、物理结构：数据的逻辑结构在计算机中的存储方式。"><a href="#b、物理结构：数据的逻辑结构在计算机中的存储方式。" class="headerlink" title="b、物理结构：数据的逻辑结构在计算机中的存储方式。"></a>b、物理结构：数据的逻辑结构在计算机中的存储方式。</h4><ul>
+<li><h5 id="顺序存储：-数据元素存放在地址连续的存储单元中，数据之间的逻辑关系和物理关于一致。"><a href="#顺序存储：-数据元素存放在地址连续的存储单元中，数据之间的逻辑关系和物理关于一致。" class="headerlink" title="顺序存储： 数据元素存放在地址连续的存储单元中，数据之间的逻辑关系和物理关于一致。"></a>顺序存储： 数据元素存放在地址连续的存储单元中，数据之间的逻辑关系和物理关于一致。</h5></li>
+<li><h5 id="链式存储：数据元素存放在任意的区域；数据之间可以是连续的，也可以是不连续的。"><a href="#链式存储：数据元素存放在任意的区域；数据之间可以是连续的，也可以是不连续的。" class="headerlink" title="链式存储：数据元素存放在任意的区域；数据之间可以是连续的，也可以是不连续的。"></a>链式存储：数据元素存放在任意的区域；数据之间可以是连续的，也可以是不连续的。</h5></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/19/java%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80/" class="archive-article-date">
-  	<time datetime="2020-05-19T10:12:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/19/java%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80/">java总结（一）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/11/Redis%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2020-05-11T12:34:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/11/Redis%E5%85%A5%E9%97%A8/">Redis入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/06/Cookeie%E5%92%8CSession/" class="archive-article-date">
-  	<time datetime="2020-05-06T11:47:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/06/Cookeie%E5%92%8CSession/">Cookeie和Session</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/03/Servlet%E5%85%A5%E9%97%A8%EF%BC%882%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-05-03T12:17:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/03/Servlet%E5%85%A5%E9%97%A8%EF%BC%882%EF%BC%89/">Servlet入门（2）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/29/Servlet%E5%85%A5%E9%97%A8%EF%BC%881%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-04-29T12:12:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/29/Servlet%E5%85%A5%E9%97%A8%EF%BC%881%EF%BC%89/">Servlet入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/22/IO%E6%B5%81/" class="archive-article-date">
-  	<time datetime="2020-04-22T14:56:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/22/IO%E6%B5%81/">IO流(1)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/30/Java%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E2%80%94%E9%9B%86%E5%90%88%E7%B1%BB%EF%BC%881%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-03-30T13:03:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/30/Java%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E2%80%94%E9%9B%86%E5%90%88%E7%B1%BB%EF%BC%881%EF%BC%89/">Java日记———Collection集合类(1)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/10/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%882%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-03-10T10:26:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/10/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%882%EF%BC%89/">JAVA日记——多线程（2）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%B3%9B%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-02-09T12:40:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%B3%9B%E5%9E%8B/">JAVA日记——泛型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
       
-        </div></section>
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/26/JA%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-JAVA基础——equals方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/25/JAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94equals%E6%96%B9%E6%B3%95/">JAVA基础——JAVA中判断对象的相等性</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/25/JAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94equals%E6%96%B9%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2019-08-25T10:16:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="JAVA的equals方法"><a href="#JAVA的equals方法" class="headerlink" title="JAVA的equals方法"></a>JAVA的equals方法</h1><p>在JAVA中判断两个对象是否相等可以用这两个对象的对象状态来判断，如果两个对象的状态相等，那么就可以认为这两个对象是相等的。而判断对象的状态可以利用“==”、equals方法以及instanceof这三种方式来判断对象是否相等。下面分别来举例说明这三种方法的用法和特性。</p>
+<h3 id="先定义两个类-并重写equals方法"><a href="#先定义两个类-并重写equals方法" class="headerlink" title="先定义两个类,并重写equals方法"></a>先定义两个类,并重写equals方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">public class People&#123;</span><br><span class="line">    private String name;</span><br><span class="line">    private int age;</span><br><span class="line"></span><br><span class="line">    public People(String name, int age)&#123;</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">        this.age &#x3D; age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public boolean equals(Object e)&#123; </span><br><span class="line">        if(this &#x3D;&#x3D; e)   return true;</span><br><span class="line"></span><br><span class="line">        if(e !&#x3D; null)   return true;</span><br><span class="line"></span><br><span class="line">        if(getClass() &#x3D;&#x3D; e.getClass())   return true; </span><br><span class="line"></span><br><span class="line">        People eq &#x3D; (People) e;</span><br><span class="line">        return (Objects.equals(name, eq.name) &amp;&amp; age &#x3D;&#x3D; eq.age);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Man extends Student&#123;</span><br><span class="line">    private double classScore;</span><br><span class="line"></span><br><span class="line">    public Student(String name, int age, double classScore)&#123;</span><br><span class="line">        super(name, age);</span><br><span class="line">        this.classScore &#x3D; classScore;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public double raiseScore(double raiseScore)&#123;</span><br><span class="line">        return classScore + raiseScore;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public boolean equals(Object e)&#123;</span><br><span class="line">        if(super.equals(e))     return true;</span><br><span class="line"></span><br><span class="line">        Student eq &#x3D; (Student) e;</span><br><span class="line">        return  (classScore &#x3D;&#x3D; eq.classScore);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>再定义一个TestMain类</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">public TestMain&#123;</span><br><span class="line">    public static void main(String [] args)&#123;</span><br><span class="line"></span><br><span class="line">        People Bob1 &#x3D; new People(&quot;bob&quot;, 20);</span><br><span class="line">        People Bob2 &#x3D; Bob1;</span><br><span class="line">        People Bob3 &#x3D; new People(&quot;bob&quot;, 20);</span><br><span class="line"></span><br><span class="line">        Student Sam &#x3D; new Student(&quot;sam&quot;, 30, 50.2);</span><br><span class="line">        Student student &#x3D; new Student(&quot;sam&quot;, 30, 50.2);     </span><br><span class="line">        Student Sam1 &#x3D; Sam;</span><br><span class="line">        </span><br><span class="line">        System.out.println(Sam &#x3D;&#x3D; Sam1);&#x2F;&#x2F;true</span><br><span class="line">        System.out.println(Sam.equals(student));&#x2F;&#x2F;true</span><br><span class="line">        </span><br><span class="line">        sam1.raiseScore(52.2);</span><br><span class="line">        student.raiseScore(52.2);</span><br><span class="line">        </span><br><span class="line">        System.out.println(Bob1 &#x3D;&#x3D; Bob2);&#x2F;&#x2F;true</span><br><span class="line">        System.out.println(Bob2 &#x3D;&#x3D; Bob3);&#x2F;&#x2F;false</span><br><span class="line">        System.out.println(Bob1.equals(Bob3));&#x2F;&#x2F;true</span><br><span class="line">        System.out.println(Sam &#x3D;&#x3D; student);&#x2F;&#x2F;false</span><br><span class="line">        System.out.println(Sam &#x3D;&#x3D; Sam1);&#x2F;&#x2F;true</span><br><span class="line">        System.out.println(Sam.equals(student));&#x2F;&#x2F;false</span><br><span class="line">        System.out.println(Bob instanceof People);&#x2F;&#x2F;true</span><br><span class="line">        System.out.println(Bob instanceof Student);&#x2F;&#x2F;false</span><br><span class="line">        System.out.println(Sam instanceof People);&#x2F;&#x2F;true</span><br><span class="line">        System.out.println(Sam instanceof Student);&#x2F;&#x2F;true</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
+<p>根据以上结果对比可以看出，“==”判断对象时只能通过对比对象的地址值来判断两个对象是否相等，而重写的equals方法可以比较对象中的值，而instanceof局限在于只能通过规定的格式进行比较，即“对象 instanceof 类”来比较，所以这就体现出instanceof在类和对象比较中的局限。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/25/JAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94equals%E6%96%B9%E6%B3%95/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="archives">
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Java基础——关键字super" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/11/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="archive-article-date">
-  	<time datetime="2019-11-11T13:14:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-11</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/11/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B/">JAVA日记——多线程（1）</a>
+      <a class="article-title" href="/2019/08/24/Java%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%85%B3%E9%94%AE%E5%AD%97super/">Java基础——关键字super</a>
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2019/08/24/Java%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%85%B3%E9%94%AE%E5%AD%97super/" class="archive-article-date">
+  	<time datetime="2019-08-24T12:31:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="java中关键字super的用法及含义"><a href="#java中关键字super的用法及含义" class="headerlink" title="java中关键字super的用法及含义"></a>java中关键字super的用法及含义</h1><p>关键词super在JAVA中有两个作用：一是调用超类方法，二是调用超类的构造器</p>
+<h2 id="超类"><a href="#超类" class="headerlink" title="超类"></a>超类</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">public class superClass&#123;</span><br><span class="line">    private  int a;</span><br><span class="line">    private String b;</span><br><span class="line"></span><br><span class="line">    public superClass(int a, String b)&#123;</span><br><span class="line">        this.a &#x3D; a;</span><br><span class="line">        this.b &#x3D; b;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public int testMethod()&#123;</span><br><span class="line">        return a;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="子类"><a href="#子类" class="headerlink" title="子类"></a>子类</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public class subClass extends superClass&#123;</span><br><span class="line">    private double c;</span><br><span class="line">    ..............</span><br><span class="line">    public int testMethod()&#123;</span><br><span class="line">        .............</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>实现这个子类方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public int testMethod()&#123;</span><br><span class="line">    return c + a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>子类的testMethod方法实现了返回c加a的和的操作，但这样是不可行的。因为超类中的参数a属于superClass类的私有域，而子类subClass并不能直接访问超类superClass的私有域。虽然子类subClass继承了超类的所有参数和方法，但对于超类中的私有域只是单单的继承，并不能访问。如果子类一定要访问超类的私有域，可以通过超类的公有接口来方位，而在superClass类中可以方位私有域a的中公共接口为testMethod方法。所有subClass实现testMethod方法的正确表达为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public int testMethod()&#123;</span><br><span class="line">    return c + super.testMethod();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在这里体现了关键字super的第一个作用:调用超类的方法。接下举例suoer调用超类构造器</p>
+<h2 id="子类构造器"><a href="#子类构造器" class="headerlink" title="子类构造器:"></a>子类构造器:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public subClass(int a,String b, double c )&#123;</span><br><span class="line">    super(a, b); </span><br><span class="line">    this.c &#x3D; c;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>super语句必须位于子类构造器的第一句，super(a, b)是调用超类superClass中含有a, b的参数的构造器。因为子类不能访问超类的私有域，使用super来调用超类的构造器从而对自己的私有域进行初始化。</p>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/24/Java%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%85%B3%E9%94%AE%E5%AD%97super/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
+    <article id="post-JAVA基础——关键字this" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
-    </div></section>
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/22/JAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%85%B3%E9%94%AE%E5%AD%97this/">JAVA基础——关键词this</a>
+    </h1>
   
 
+        
+        <a href="/2019/08/22/JAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%85%B3%E9%94%AE%E5%AD%97this/" class="archive-article-date">
+  	<time datetime="2019-08-22T13:39:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-22</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、JAVA中this的含义"><a href="#一、JAVA中this的含义" class="headerlink" title="一、JAVA中this的含义"></a>一、JAVA中this的含义</h2><p>在JAVA中参数有两种，一种是显式参数，另一种是隐式参数。而this可以用来在方法中表示隐式参数.</p>
+<h3 id="方法："><a href="#方法：" class="headerlink" title="方法："></a>方法：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public void testValue(int explicitValue)&#123;</span><br><span class="line">    int value &#x3D; explicitValue * implicitValue;</span><br><span class="line">    implicitValue +&#x3D; value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="调用方法"><a href="#调用方法" class="headerlink" title="调用方法"></a>调用方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">useValue.testValue(5);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="结果为useValue-testValue域的值增加5倍。具体分解步骤为"><a href="#结果为useValue-testValue域的值增加5倍。具体分解步骤为" class="headerlink" title="结果为useValue.testValue域的值增加5倍。具体分解步骤为"></a>结果为useValue.testValue域的值增加5倍。具体分解步骤为</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int value &#x3D; implicitValue * 5;</span><br><span class="line">implicitValue +&#x3D; value;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>testValue方法有两个参数。第一个为隐式参数implicitValue，第二个为显式参数explicitValue。而在方法中可以用关键字this表示隐式参数，所以可以用以下方式编写</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public void testValue(int explicitValue)&#123;</span><br><span class="line">    int value &#x3D; explicitValue * this.implicitValue;</span><br><span class="line">    this.implicitValue +&#x3D; value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="在JAVA类的构造器当中参数名的命名可以利用隐式参数的概率来提高程序的可读性"><a href="#在JAVA类的构造器当中参数名的命名可以利用隐式参数的概率来提高程序的可读性" class="headerlink" title="在JAVA类的构造器当中参数名的命名可以利用隐式参数的概率来提高程序的可读性"></a>在JAVA类的构造器当中参数名的命名可以利用隐式参数的概率来提高程序的可读性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">class test&#123;</span><br><span class="line">    int value;</span><br><span class="line">    double number;</span><br><span class="line">    String name;</span><br><span class="line">    </span><br><span class="line">    public test(int value, double number, String name)&#123;</span><br><span class="line">            this.value&#x2F;*实例域*&#x2F; &#x3D; value&#x2F;*局部变量*&#x2F;;</span><br><span class="line">            this.number &#x3D; number;</span><br><span class="line">            this.name &#x3D; name;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="在实例域中定义了一个value，在构造器中也定义了一个同名的局部变量value，局部变量value用同样的名字将实例域屏蔽，此时的局部变量value将作为参数，而不是使用实例域。此时用关键词this指示隐式参数来区分实例域和局部变量，能使程序更具有可读性。"><a href="#在实例域中定义了一个value，在构造器中也定义了一个同名的局部变量value，局部变量value用同样的名字将实例域屏蔽，此时的局部变量value将作为参数，而不是使用实例域。此时用关键词this指示隐式参数来区分实例域和局部变量，能使程序更具有可读性。" class="headerlink" title="在实例域中定义了一个value，在构造器中也定义了一个同名的局部变量value，局部变量value用同样的名字将实例域屏蔽，此时的局部变量value将作为参数，而不是使用实例域。此时用关键词this指示隐式参数来区分实例域和局部变量，能使程序更具有可读性。"></a>在实例域中定义了一个value，在构造器中也定义了一个同名的局部变量value，局部变量value用同样的名字将实例域屏蔽，此时的局部变量value将作为参数，而不是使用实例域。此时用关键词this指示隐式参数来区分实例域和局部变量，能使程序更具有可读性。</h3>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/22/JAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%85%B3%E9%94%AE%E5%AD%97this/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-JAVA控制语句——中断控制流程语句" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/20/JAVA%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5%E2%80%94%E2%80%94%E4%B8%AD%E6%96%AD%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B%E8%AF%AD%E5%8F%A5/">JAVA控制语句————中断控制流程语句</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/20/JAVA%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5%E2%80%94%E2%80%94%E4%B8%AD%E6%96%AD%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B%E8%AF%AD%E5%8F%A5/" class="archive-article-date">
+  	<time datetime="2019-08-20T13:11:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="JAVA的中断控制流程语句"><a href="#JAVA的中断控制流程语句" class="headerlink" title="JAVA的中断控制流程语句"></a>JAVA的中断控制流程语句</h1><p>C语言中的goto语句一直被诟病，而goto也被JAVA作为关键字保留了下来。但并没有在实际的JAVA编程中使用它。<br>实际上goto语句非常的灵活，也正是这在灵活导致如果在程序中大量使用goto语句会使程序的逻辑变得十分的混乱并<br>且十分容易使程序出现错误。但偶尔使用goto语句跳出循环还是非常有益处的。在JAVA语言中增加了一条带标签的b-<br>reak，来支撑这种程序设计风格。</p>
+<h2 id="1、不带标签的break，和在switch语句中的break一样用于跳出循环"><a href="#1、不带标签的break，和在switch语句中的break一样用于跳出循环" class="headerlink" title="1、不带标签的break，和在switch语句中的break一样用于跳出循环."></a>1、不带标签的break，和在switch语句中的break一样用于跳出循环.</h2><p>例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">while(.....)&#123;</span><br><span class="line">    int a &#x3D; 10;</span><br><span class="line">    -----</span><br><span class="line">    if(y&lt;b) break;</span><br><span class="line">    System.out.println(a);</span><br><span class="line">    ------</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2、带标签的break-用于跳出多层嵌套的循环，但不能用于跳入循环"><a href="#2、带标签的break-用于跳出多层嵌套的循环，但不能用于跳入循环" class="headerlink" title="2、带标签的break,用于跳出多层嵌套的循环，但不能用于跳入循环"></a>2、带标签的break,用于跳出多层嵌套的循环，但不能用于跳入循环</h2><p>例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">int a &#x3D; 10;</span><br><span class="line">tag_break: &#x2F;&#x2F;跳出循环到这里继续执行打印程序</span><br><span class="line">while(.....)&#123;</span><br><span class="line">    for(int i&#x3D;0; i&lt;&#x3D;n;i++)&#123;</span><br><span class="line">        ------</span><br><span class="line">        ------</span><br><span class="line">        if(-----) break tag_break;</span><br><span class="line">        ------</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(”跳出循环打印“)；</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、在while中continue跳出当前循环到最内层的循环首部；在for循环中跳到for循环的“更新”部分"><a href="#3、在while中continue跳出当前循环到最内层的循环首部；在for循环中跳到for循环的“更新”部分" class="headerlink" title="3、在while中continue跳出当前循环到最内层的循环首部；在for循环中跳到for循环的“更新”部分"></a>3、在while中continue跳出当前循环到最内层的循环首部；在for循环中跳到for循环的“更新”部分</h2><p>例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">int a &#x3D; 50;</span><br><span class="line">while(....)&#123;</span><br><span class="line">    -----</span><br><span class="line">    if(n&lt;2) continue;</span><br><span class="line">    -----</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>continue跳到”i++”处。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for（int i&#x3D;1; i&lt;&#x3D;n; i++）&#123;</span><br><span class="line">    -----</span><br><span class="line">    if(n&lt;&#x3D;2) continue;</span><br><span class="line">    -------</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/20/JAVA%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5%E2%80%94%E2%80%94%E4%B8%AD%E6%96%AD%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B%E8%AF%AD%E5%8F%A5/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-JAVA的数据类型" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/19/JAVA%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">JAVA第一天</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/19/JAVA%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="archive-article-date">
+  	<time datetime="2019-08-19T12:30:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="java中的数据类型"><a href="#java中的数据类型" class="headerlink" title="java中的数据类型"></a>java中的数据类型</h1><h2 id="1、基本数据类型"><a href="#1、基本数据类型" class="headerlink" title="1、基本数据类型"></a>1、基本数据类型</h2><h3 id="a、整数类型"><a href="#a、整数类型" class="headerlink" title="a、整数类型"></a>a、整数类型</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>存储空间</th>
+<th>取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte</td>
+<td>1字节</td>
+<td>-128 ~ 127</td>
+</tr>
+<tr>
+<td>short</td>
+<td>2字节</td>
+<td>-32 768 ~ 32 767</td>
+</tr>
+<tr>
+<td>int</td>
+<td>4字节</td>
+<td>大约正负20亿</td>
+</tr>
+<tr>
+<td>long</td>
+<td>8字节</td>
+<td>省略</td>
+</tr>
+</tbody></table>
+<p>十六进制：0xnumber   例 0x52<br>八进制: 0number         例 075（尽量避免使用八进制常数）</p>
+<h3 id="b、浮点类型"><a href="#b、浮点类型" class="headerlink" title="b、浮点类型"></a>b、浮点类型</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>存储空间</th>
+<th>取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>float</td>
+<td>4字节</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>double</td>
+<td>8字节</td>
+<td>省略</td>
+</tr>
+</tbody></table>
+<p>double|表示类型的数值精度是float的两倍。绝大多数程序都使用double，应避免使用float。</p>
+<p>注：在JAVA中0.125=2e-3 表示为 0x1.0p-3.</p>
+<p>三个特殊的浮点数值：</p>
+<ul>
+<li>正无穷大</li>
+<li>负无穷大</li>
+<li>NaN（不是一个数）  例：一个正整数除以0的结果为正无穷大，0/0或负数的平方根结果为NaN。</li>
+</ul>
+<h2 id="2、字符型"><a href="#2、字符型" class="headerlink" title="2、字符型"></a>2、字符型</h2><p>char 2字节</p>
+<h2 id="3、布尔类型"><a href="#3、布尔类型" class="headerlink" title="3、布尔类型"></a>3、布尔类型</h2><p>boolean 1位布尔（boolean）类型有两个值，true和false.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/19/JAVA%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-初识Markdown-基本语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/28/%E5%88%9D%E8%AF%86Markdown-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">初识Markdown-基本语法</a>
+    </h1>
+  
+
+        
+        <a href="/2019/07/28/%E5%88%9D%E8%AF%86Markdown-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2019-07-28T08:16:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p><strong>一、标题</strong></p>
+<p>标题前加‘#’号，‘#‘号后必须加一个<strong>空格</strong>再跟文字，一个‘#’代表一级标题，最多六级也就是6个‘#’。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;# 一级标题</span><br><span class="line">&gt;## 二级标题</span><br><span class="line">&gt;### 三级标题</span><br><span class="line">&gt;#### 四级标题</span><br><span class="line">&gt;##### 五级标题</span><br><span class="line">&gt;###### 六级标题</span><br><span class="line">&gt;####### 错误示例</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p><strong>例</strong></p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>####### 错误示例</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2019/07/28/%E5%88%9D%E8%AF%86Markdown-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/28/%E5%88%9D%E8%AF%86Markdown-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-第一次博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/28/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/">第一次博客</a>
+    </h1>
+  
+
+        
+        <a href="/2019/07/28/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+  	<time datetime="2019-07-27T23:28:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>2019.7.27技术在于总结，记录每天的进步。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/28/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a><a class="extend next" rel="next" href="/archives/page/2/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/4/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
     </nav>
   
 
@@ -471,9 +799,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
+		isHome: true,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

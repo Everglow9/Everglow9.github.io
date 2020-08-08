@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | tree</title>
+  <title>tree</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="tree">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
 <meta property="og:site_name" content="tree">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="tree">
@@ -152,302 +152,795 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-JAVA日记——抽象" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%8A%BD%E8%B1%A1/">JAVA日记——抽象类与接口</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%8A%BD%E8%B1%A1/" class="archive-article-date">
+  	<time datetime="2019-10-09T14:13:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+</a>
+        
+      </header>
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<h1 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h1><p>当多个类中出现了相同的功能，但功能内的主体不同，这时可以进行向上进行抽取，只抽取功能定义，不抽取功能主体。</p>
+<h2 id="1、抽象类的特点"><a href="#1、抽象类的特点" class="headerlink" title="1、抽象类的特点"></a>1、抽象类的特点</h2><blockquote>
+<ul>
+<li><p>抽象方法一定在抽象类中</p>
+</li>
+<li><p>抽象方法和抽象类必须被abstract关键字修饰</p>
+</li>
+<li><p>抽象类不能用new创建对象，因为调用抽象类方法没有意义</p>
+</li>
+<li><p>抽象方法要被子类使用必须由子类复写其所有的抽象方法后，再建立子类对象调用；如果子类只复写了部分抽象方法，那么该子类还是一个抽象类。</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="2、抽象类和一般类的区别"><a href="#2、抽象类和一般类的区别" class="headerlink" title="2、抽象类和一般类的区别"></a>2、抽象类和一般类的区别</h2><blockquote>
+<p>抽象类和一般类没有太大的区别，两个类描述事物的性质时没有什么区别，但是抽象类在定义功能方法时无法定义主体。</p>
+<p>抽象类比一般类多了抽象函数，在抽象类中可以定义抽象方法</p>
+<p>抽象类可以不定义抽象方法，这样做仅仅是不让该类建立对象</p>
+</blockquote>
+<p><strong><em>（注：抽象类不可以实例化）</em></strong></p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/19/java%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80/" class="archive-article-date">
-  	<time datetime="2020-05-19T10:12:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/19/java%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80/">java总结（一）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/11/Redis%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2020-05-11T12:34:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/11/Redis%E5%85%A5%E9%97%A8/">Redis入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/06/Cookeie%E5%92%8CSession/" class="archive-article-date">
-  	<time datetime="2020-05-06T11:47:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/06/Cookeie%E5%92%8CSession/">Cookeie和Session</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/03/Servlet%E5%85%A5%E9%97%A8%EF%BC%882%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-05-03T12:17:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/03/Servlet%E5%85%A5%E9%97%A8%EF%BC%882%EF%BC%89/">Servlet入门（2）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/29/Servlet%E5%85%A5%E9%97%A8%EF%BC%881%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-04-29T12:12:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/29/Servlet%E5%85%A5%E9%97%A8%EF%BC%881%EF%BC%89/">Servlet入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/22/IO%E6%B5%81/" class="archive-article-date">
-  	<time datetime="2020-04-22T14:56:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/22/IO%E6%B5%81/">IO流(1)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/30/Java%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E2%80%94%E9%9B%86%E5%90%88%E7%B1%BB%EF%BC%881%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-03-30T13:03:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/30/Java%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E2%80%94%E9%9B%86%E5%90%88%E7%B1%BB%EF%BC%881%EF%BC%89/">Java日记———Collection集合类(1)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/10/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%882%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-03-10T10:26:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/10/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%882%EF%BC%89/">JAVA日记——多线程（2）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%B3%9B%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-02-09T12:40:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%B3%9B%E5%9E%8B/">JAVA日记——泛型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
       
-        </div></section>
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/09/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E6%8A%BD%E8%B1%A1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-JAVA继继承——继承" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/08/JAVA%E7%BB%A7%E7%BB%A7%E6%89%BF%E2%80%94%E2%80%94%E7%BB%A7%E6%89%BF/">JAVA基础——继承</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/08/JAVA%E7%BB%A7%E7%BB%A7%E6%89%BF%E2%80%94%E2%80%94%E7%BB%A7%E6%89%BF/" class="archive-article-date">
+  	<time datetime="2019-10-08T14:07:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><p>利用继承可以基于已存在的类构造一个新类。继承提高了代码的复用性，可以让类与类之间产生关系，有了这个关系才有了多态的特性。继承必须是类与类之间有所属关系，“is—a”关系是继承的一个明显特征。<br>java语言支持多层继承和单继承，不支持多继承。因为多继承容易带来安全隐患。</p>
+<h2 id="1、为什么在具体调用父类的功能时要创建最子类对象"><a href="#1、为什么在具体调用父类的功能时要创建最子类对象" class="headerlink" title="1、为什么在具体调用父类的功能时要创建最子类对象"></a>1、为什么在具体调用父类的功能时要创建最子类对象</h2><blockquote>
+<p>a、可能父类不能创建对象，如：抽象类；</p>
+<p>b、创建子类对象可以使用更多的功能。包括基本的和特有的；</p>
+</blockquote>
+<h2 id="2、子父类中的变量"><a href="#2、子父类中的变量" class="headerlink" title="2、子父类中的变量"></a>2、子父类中的变量</h2><blockquote>
+<p>如果子类中出现非私有的同名成员变量是，子类访问本类中的变量用this，子类访问父类的同名变量用super。</p>
+<p>例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;class Fu</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line">  int age &#x3D; 3;</span><br><span class="line">&gt;&gt;&#125;    </span><br><span class="line">  </span><br><span class="line">&gt;&gt;class Zi extends Fu  &#x2F;&#x2F;关键字extends表示继承，a extends b， a继承b。</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line"> int age &#x3D; 4；</span><br><span class="line"> System.out.println(super.age) &#x2F;&#x2F;打印父类的age，结果为3.</span><br><span class="line">  System.out.println(this.age) &#x2F;&#x2F;打印本类（子类）的age，结果为4；</span><br><span class="line">&gt;&gt;&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="3、子父类中的函数"><a href="#3、子父类中的函数" class="headerlink" title="3、子父类中的函数"></a>3、子父类中的函数</h2><blockquote>
+<p>当子类中出现和父类一样的函数时，子类对象调用该函数时，会运行子类函数的内容。如同子类函数覆盖父类函数一样。这是函数的另一个特性：**<em>重写**</em>。因此当子类继承父类并延袭父类的功能，虽然子类具备这些功能，但功能的内容却与父类不一致；此时没有必要从新定义新功能，而是使用覆盖特性，保留父类的功能定义，并重写该功能。</p>
+</blockquote>
+<h2 id="4、覆盖的注意事项"><a href="#4、覆盖的注意事项" class="headerlink" title="4、覆盖的注意事项"></a>4、覆盖的注意事项</h2><blockquote>
+<ul>
+<li><p>子类覆盖父类，必须保证子类的权限大于等于父类权限，否则编译失败。</p>
+<p>   public &gt; protected &gt; private</p>
+</li>
+<li><p>静态只能覆盖静态。</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="5、子父类中的构造函数"><a href="#5、子父类中的构造函数" class="headerlink" title="5、子父类中的构造函数"></a>5、子父类中的构造函数</h2><blockquote>
+<p>在对子类对象进行初始化时，父类构造器也会运行。因为子类构造函数的第一行默认有一条隐式语句super();super()会调用父类构造器中空参数的构造函数，当然也可以定义super语句的方式来指定调用的构造函数。</p>
+<p>例:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;class Fu</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line"> int age;   </span><br><span class="line"> Fu(int age)</span><br><span class="line"> &#123;</span><br><span class="line">     this.age &#x3D; age;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> Fu() &#123;&#125;</span><br><span class="line"> &#125;    </span><br><span class="line"></span><br><span class="line">&gt;&gt;class Zi1 extends Fu</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line"> Zi1()</span><br><span class="line"> &#123;</span><br><span class="line">     super();&#x2F;&#x2F;调用空参数的父类构造函数。   </span><br><span class="line"> &#125;</span><br><span class="line">&gt;&gt;&#125;</span><br><span class="line"> </span><br><span class="line">&gt;&gt;class Zi2 extends Fu</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line">   Zi2()</span><br><span class="line">   &#123;</span><br><span class="line">       super(5);&#x2F;&#x2F;调用父类有参数age的构造函数。</span><br><span class="line">   &#125;</span><br><span class="line">&gt;&gt;&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="6、为什么子类一定要访问父类的构造函数"><a href="#6、为什么子类一定要访问父类的构造函数" class="headerlink" title="6、为什么子类一定要访问父类的构造函数"></a>6、为什么子类一定要访问父类的构造函数</h2><blockquote>
+<p>因为父类中的数据子类可以直接获取。子类对象在建立时，需要先查看父类是如何对这些数据进行初始化的。所以子类在对象初始化时要先访问父类构造函数。</p>
+</blockquote>
+<h2 id="7、子类实例化过程"><a href="#7、子类实例化过程" class="headerlink" title="7、子类实例化过程"></a>7、子类实例化过程</h2><blockquote>
+<p>子类中所有的构造函数默认都会访问父类中空参数的构造函数，因为子类中每一个构造函数第一行都有一句隐式的super()；当父类中没有空参数的构造函数时，必须手动的通过super语句来指定要访问的父类构造函数。当然，子类的构造函数的第一行业可以手动的指定this语句来访问本类中的构造函数。子类中必须有一个构造函数访问父类的构造函数。</p>
+<p>例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;class Fu</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line">   Fu() &#123;&#125;</span><br><span class="line">&gt;&gt;&#125;</span><br><span class="line"></span><br><span class="line">&gt;&gt;class Zo</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line">   int age;</span><br><span class="line">   Zi(int age)</span><br><span class="line">   &#123;</span><br><span class="line">       this();&#x2F;&#x2F;访问本类中空参数的构造函数 </span><br><span class="line">       this.age &#x3D; age;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&gt;&gt;Zi()</span><br><span class="line">&gt;&gt;&#123;</span><br><span class="line">   super();&#x2F;&#x2F;访问父类无参构造函数。</span><br><span class="line"> &#125;</span><br><span class="line">&gt;&gt;&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/08/JAVA%E7%BB%A7%E7%BB%A7%E6%89%BF%E2%80%94%E2%80%94%E7%BB%A7%E6%89%BF/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="archives">
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-JAVA基础——Static关键字" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/11/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="archive-article-date">
-  	<time datetime="2019-11-11T13:14:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-11</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/11/JAVA%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B/">JAVA日记——多线程（1）</a>
+      <a class="article-title" href="/2019/10/05/JAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94Static%E5%85%B3%E9%94%AE%E5%AD%97/">JAVA基础——Static关键字</a>
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2019/10/05/JAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94Static%E5%85%B3%E9%94%AE%E5%AD%97/" class="archive-article-date">
+  	<time datetime="2019-10-05T14:02:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Static关键字"><a href="#Static关键字" class="headerlink" title="Static关键字"></a>Static关键字</h1><p>Static关键字是一个修饰符，用于修饰成员（成员变量和成员函数），当成员被Static修饰后除了可以被对象调用外，还可以通过类名直接调用。</p>
+<p>例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Class Test</span><br><span class="line">&#123;</span><br><span class="line">    public static void main(String [] args)</span><br><span class="line">    &#123;</span><br><span class="line">        Demo t &#x3D; new Demo();</span><br><span class="line">        t.a;</span><br><span class="line">        Demo.a;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Class Demo</span><br><span class="line">&#123;</span><br><span class="line">    Static int a &#x3D; 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+<h3 id="Static修饰的成员的特点："><a href="#Static修饰的成员的特点：" class="headerlink" title="Static修饰的成员的特点："></a>Static修饰的成员的特点：</h3><blockquote>
+<ul>
+<li>随着类的加载而加载，随着类的消失而消失 </li>
+<li>有限于对象存在</li>
+<li>被所有对象共享</li>
+<li>可以直接被类名调用</li>
+</ul>
+</blockquote>
+<h3 id="实例变量（对象变量）和类变量（静态变量）的区别："><a href="#实例变量（对象变量）和类变量（静态变量）的区别：" class="headerlink" title="实例变量（对象变量）和类变量（静态变量）的区别："></a>实例变量（对象变量）和类变量（静态变量）的区别：</h3><blockquote>
+<h4 id="1、存放位置："><a href="#1、存放位置：" class="headerlink" title="1、存放位置："></a>1、存放位置：</h4><ul>
+<li>类变量随着类的加载而加载，随类的消失而消失，存放于方法区中；<br>类变量的生命周期最长，随着类的消失而消失。</li>
+<li>实例变量随着对象的建立而存在于堆内存中；实例变量生命周期随着对象的消失而消失。</li>
+</ul>
+</blockquote>
+<h3 id="静态变量的注意事项："><a href="#静态变量的注意事项：" class="headerlink" title="静态变量的注意事项："></a>静态变量的注意事项：</h3><blockquote>
+<ul>
+<li>静态方法只能访问静态成员；但非静态的方法可以访问静态的也可以访问非静态的。</li>
+<li>静态方法中不可以定义this和super关键字。因为静态优先于对象建立，而this指代的是本类的对象。</li>
+</ul>
+</blockquote>
+<h3 id="静态的好处和坏处："><a href="#静态的好处和坏处：" class="headerlink" title="静态的好处和坏处："></a>静态的好处和坏处：</h3><blockquote>
+<ul>
+<li><strong>好处</strong>：对象的共享数据可以进行单独空间的存储，节省内存空间，不用每一个对象都存储一份共享数据；可以直接使用类名调用。</li>
+<li><strong>坏处</strong>：生命周期过长，且访问有局限性。</li>
+</ul>
+</blockquote>
+<h3 id="什么时候使用静态："><a href="#什么时候使用静态：" class="headerlink" title="什么时候使用静态："></a>什么时候使用静态：</h3><blockquote>
+<ul>
+<li>①什么时候使用静态变量：当对象中出现了共享数据时，用静态修饰该变量，单独存储在方法区供本类中所有对象访问；每个对象特有的成员定义为非静态，存放在堆内存中。</li>
+<li>②什么时候定义静态函数：当功能内部没有访问到非静态数据时，可以将该方法定义为静态方法。</li>
+</ul>
+</blockquote>
+<h3 id="静态代码块："><a href="#静态代码块：" class="headerlink" title="静态代码块："></a>静态代码块：</h3><blockquote>
+<p>静态代码块随着类的加载而执行，但是只执行一次，作用是给类进行初始化，且优先于主函数。</p>
+</blockquote>
+<p><strong>初始化优先级</strong>：  构造函数初始化 &lt; 代码块 &lt; 默认初始化 &lt; static代码块</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/05/JAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94Static%E5%85%B3%E9%94%AE%E5%AD%97/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
+    <article id="post-两数互换" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
-    </div></section>
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/03/%E4%B8%A4%E6%95%B0%E4%BA%92%E6%8D%A2/">两数互换</a>
+    </h1>
   
 
+        
+        <a href="/2019/10/03/%E4%B8%A4%E6%95%B0%E4%BA%92%E6%8D%A2/" class="archive-article-date">
+  	<time datetime="2019-10-03T13:36:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-03</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="在实际编程中我们经常会遇到两个数互相调换的问题，两数调换的方法按变量的数量可以分为两种："><a href="#在实际编程中我们经常会遇到两个数互相调换的问题，两数调换的方法按变量的数量可以分为两种：" class="headerlink" title="在实际编程中我们经常会遇到两个数互相调换的问题，两数调换的方法按变量的数量可以分为两种："></a>在实际编程中我们经常会遇到两个数互相调换的问题，两数调换的方法按变量的数量可以分为两种：</h3><ul>
+<li><p>引入第三个变量</p>
+</li>
+<li><p>不引入第三个变量</p>
+</li>
+</ul>
+<h3 id="下面依照以上两种思想来实现两数的互换："><a href="#下面依照以上两种思想来实现两数的互换：" class="headerlink" title="下面依照以上两种思想来实现两数的互换："></a>下面依照以上两种思想来实现两数的互换：</h3><p>1、引入变量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public static void swap(int a, int b)&#123;</span><br><span class="line">    int c;</span><br><span class="line">    c &#x3D; a;</span><br><span class="line">    a &#x3D; b;</span><br><span class="line">    b &#x3D; c;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2、不引入变量</p>
+<p>第一种：先把两数的和赋给第一个数，另二个数的值等于两数之和减去该数，同理第一个数等于两数的和减去重新赋值后的第二个数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;这种方法局限性在于无法预知引入数据的和的大小，容易出现溢出</span><br><span class="line">public static void swap(int a, int b)&#123;</span><br><span class="line">    a &#x3D; a + b;</span><br><span class="line">    b &#x3D; a - b;</span><br><span class="line">    a &#x3D; a - b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>第二种：因为x^y^y=y，利用异或操作的性质实现两数互换</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public static void swap(int a, int b)&#123;</span><br><span class="line">    a &#x3D; a^b;</span><br><span class="line">    b &#x3D; a^b;&#x2F;&#x2F;b &#x3D; (a^b)^b &#x3D; a;</span><br><span class="line">    a &#x3D; a^b;&#x2F;&#x2F;a &#x3D; (a^b)^a &#x3D; b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/03/%E4%B8%A4%E6%95%B0%E4%BA%92%E6%8D%A2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-“JAVA基础——逻辑运算符和位运算符" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/02/%E2%80%9CJAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/">JAVA基础——逻辑运算符和位运算符</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/02/%E2%80%9CJAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/" class="archive-article-date">
+  	<time datetime="2019-10-02T12:46:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h1><p>逻辑运算符是用于连接boolean类型的表达式。</p>
+<p>关系运算符主要有：</p>
+<ul>
+<li><p>&amp;（与）：全1出1，有0出0。例：（a&gt;2 &amp; a&lt;3）当判断这个语句为真还是为假时，无论左边的表达式是真是假，右边也会进行运算判断。</p>
+</li>
+<li><p>&amp;&amp;（逻辑与）：全1为1，有0出0，采用“短路”的方式求值。例：（a&gt;2 &amp;&amp; a&lt;3）当判断这个语句为真还是为假时，当左边为假时，右边不做运算直接输出，顾名思义“短路”。</p>
+</li>
+<li><p>|（或）：有1出1，全0为0.例： （a&gt;2 | a&lt;3）当判断这个语句为真还是为假时，无论左边的表达式是真是假，右边也会进行运算判断。</p>
+</li>
+<li><p>||（逻辑或）：有1出1，全0为0，采用“短路”的方式求值。例：（a&gt;2 || a&lt;3）当判断这个语句为真还是为假时,当左边为真时，右边不做运算直接输出。</p>
+</li>
+<li><p>^（异或）：相同为0，不同为1。（一个数异或一个数两次，结果还是那个数 a^b^b=a）。</p>
+</li>
+<li><p>a ? b : c （三目运算符）：三目运算符是一种运算符，运算完必须有一个结果。</p>
+</li>
+</ul>
+<h1 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h1><p>为运算符主要有：</p>
+<ul>
+<li><p>&lt;&lt;（左移）：数据的二进制数向左移动，最低位补0。例：3&lt;&lt;2 → 3<code>*</code>2^2=12;  -3&lt;&lt;3 → -3<code>*</code>2^3=-24;  2&lt;&lt;3 → 2<code>*</code>2^3=16. </p>
+</li>
+<li><p><code>&gt;&gt;</code>（右移）：数据的二进制数向右移动，最高位为1时空位补1，为0时补0。例：6&gt;&gt;2 → 6/2^2=1; -6&gt;&gt;1 → -6/2=-3。</p>
+</li>
+<li><p><code>&gt;&gt;&gt;</code>（无符号右移）：数据的二进制数向右移动，最高位无论是1还是0，空位都补0。例：6&gt;&gt;2 → 6/2^2=1。</p>
+</li>
+<li><p>~（取反）</p>
+</li>
+</ul>
+<p>a、当数据为正数时数据的二进制数先每位取反后再取补码；</p>
+<p>b、当数据为负数时数据的二进制数先去补码再每一位取反后再取补码。（注：补码等于反码加1）</p>
+<p>例：<del>6=-7；</del>-6=5; ~a=-a-1。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/02/%E2%80%9CJAVA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-操作系统——操作系统的四个特征" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/28/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9B%9B%E4%B8%AA%E7%89%B9%E5%BE%81/">操作系统——操作系统的四个特征</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/28/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9B%9B%E4%B8%AA%E7%89%B9%E5%BE%81/" class="archive-article-date">
+  	<time datetime="2019-09-28T14:24:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="操作系统的特征"><a href="#操作系统的特征" class="headerlink" title="操作系统的特征"></a>操作系统的特征</h1><p>操作系统的特征有四个：</p>
+<ul>
+<li>并发</li>
+<li>共享</li>
+<li>虚拟</li>
+<li>异步</li>
+</ul>
+<h2 id="1、并发："><a href="#1、并发：" class="headerlink" title="1、并发："></a>1、并发：</h2><p>指两个或多个事件在同一时间间隔内发生。在宏观上是同时发生的，但在微观上是交替进行的。并发区别于并行(指两个或多个事件同一时刻进行)。</p>
+<p><strong><em>注：操作系统的并发性指多个程序同时进行</em></strong></p>
+<h2 id="2、共享："><a href="#2、共享：" class="headerlink" title="2、共享："></a>2、共享：</h2><p>资源共享，指系统中的资源可供内存多个并发执行的进程共同使用。</p>
+<p>资源共享的方式有两种：</p>
+<ul>
+<li>互斥共享：资源可供多个进程使用，但同一时间段内只允许一个进程访问。</li>
+<li>同时共享：资源允许一个时间段内多个进程“同时”访问。</li>
+</ul>
+<h2 id="3、虚拟："><a href="#3、虚拟：" class="headerlink" title="3、虚拟："></a>3、虚拟：</h2><p>把一个物理上的实体变为若干个逻辑上的对应物。实体真实存在，逻辑对应物用户感受。</p>
+<p>虚拟技术分为：</p>
+<ul>
+<li>空分复用</li>
+<li>时分复用</li>
+</ul>
+<h2 id="4、异步："><a href="#4、异步：" class="headerlink" title="4、异步："></a>4、异步：</h2><p>异步指执行多道程序的环境下，允许多个进程并发执行，但由于资源有限，进程的执行并不是一贯到底的，而是走走停停，向前推进。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/28/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9B%9B%E4%B8%AA%E7%89%B9%E5%BE%81/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-数据结构——栈与队列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/">数据结构——栈与队列</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/" class="archive-article-date">
+  	<time datetime="2019-09-26T13:57:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-数据结构——有尾指针的单循环链表" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E6%9C%89%E5%B0%BE%E6%8C%87%E9%92%88%E7%9A%84%E5%8D%95%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8/">数据结构——有尾指针的单循环链表</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E6%9C%89%E5%B0%BE%E6%8C%87%E9%92%88%E7%9A%84%E5%8D%95%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8/" class="archive-article-date">
+  	<time datetime="2019-09-23T13:43:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="C语言描述设尾指针的单循环链表"><a href="#C语言描述设尾指针的单循环链表" class="headerlink" title="C语言描述设尾指针的单循环链表"></a>C语言描述设尾指针的单循环链表</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br></pre></td><td class="code"><pre><span class="line">void InitList(LinkList *L)</span><br><span class="line">&#123;</span><br><span class="line">    *L &#x3D; (LinkList)malloc(sizeof(struct LNode));</span><br><span class="line">    if(!*L)</span><br><span class="line">        exit(OVERFLOW);</span><br><span class="line">    (*L)-&gt;next &#x3D; *L;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void DestryList(LinkList *L)</span><br><span class="line">&#123;</span><br><span class="line">    LinkList q, p &#x3D; (*L)-&gt;next;</span><br><span class="line">    while(p !&#x3D; *L)</span><br><span class="line">    &#123;</span><br><span class="line">        q &#x3D; p-&gt;next;</span><br><span class="line">        free(p);</span><br><span class="line">        p &#x3D; q;</span><br><span class="line">    &#125;</span><br><span class="line">    free(*L);</span><br><span class="line">    *L &#x3D; NULL;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void ClearList(LinkList *L)</span><br><span class="line">&#123;</span><br><span class="line">    LinkList q, p &#x3D; (*L)-&gt;next;</span><br><span class="line">    while(p !&#x3D; *L)</span><br><span class="line">    &#123;</span><br><span class="line">        q &#x3D; p-&gt;next;</span><br><span class="line">        free(p);</span><br><span class="line">        p &#x3D; q;</span><br><span class="line">    &#125;</span><br><span class="line">    (*L)-&gt;next &#x3D; *L;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status ListEmpty(LinkList L)</span><br><span class="line">&#123;</span><br><span class="line">    if(L-&gt;next &#x3D;&#x3D; L)</span><br><span class="line">        return TRUE;</span><br><span class="line">    else</span><br><span class="line">        return FALSE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int ListLength(LinkList L)</span><br><span class="line">&#123;</span><br><span class="line">    int i &#x3D; 0;</span><br><span class="line">    LinkList p &#x3D; L-&gt;next;</span><br><span class="line">    while(p!&#x3D;L)</span><br><span class="line">    &#123;</span><br><span class="line">        i++;</span><br><span class="line">        p &#x3D; p-&gt;next;</span><br><span class="line">    &#125;   </span><br><span class="line">    return i;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status GetElem(LinkList L, int i, ElemType *e)</span><br><span class="line">&#123;</span><br><span class="line">    int j;</span><br><span class="line">    LinkList p &#x3D; L-&gt;next;</span><br><span class="line">    if(i&lt;1 || i&gt;ListLength(L))</span><br><span class="line">        return ERROR;</span><br><span class="line">    for(j&#x3D;1; j&lt;&#x3D;i; j++)</span><br><span class="line">        p &#x3D; p-&gt;next;</span><br><span class="line">    *e &#x3D; p-&gt;data;</span><br><span class="line">    return OK;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int LocateElem(LinkList L, ElemType e, Status(*compare)(ElemType, ElemType))</span><br><span class="line">&#123;</span><br><span class="line">    int i&#x3D;0;</span><br><span class="line">    LinkList p &#x3D; L-&gt;next-&gt;next;</span><br><span class="line">    while(p !&#x3D; L-&gt;next)</span><br><span class="line">    &#123;</span><br><span class="line">        i++;</span><br><span class="line">        if(compare(p-&gt;data, e))</span><br><span class="line">            return i;</span><br><span class="line">        p &#x3D; p-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status PriorElem(LinkList L, ElemType cur_e, ElemType *pre_e)</span><br><span class="line">&#123;</span><br><span class="line">    LinkList q, p &#x3D; L-&gt;next-&gt;next;</span><br><span class="line">    while(p !&#x3D; L-&gt;next)</span><br><span class="line">    &#123;</span><br><span class="line">        q &#x3D; p-&gt;next</span><br><span class="line">        if(cur_e &#x3D;&#x3D; q-&gt;data)</span><br><span class="line">        &#123;</span><br><span class="line">            *pre_e &#x3D; p-&gt;data;</span><br><span class="line">            return TRUE;</span><br><span class="line">        &#125;</span><br><span class="line">        p &#x3D; q;</span><br><span class="line">    &#125;</span><br><span class="line">    return FALSE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status NextElem(LinkList L, ElemType cur_e, ElemType *next_e)</span><br><span class="line">&#123;</span><br><span class="line">    LinkList p &#x3D; L-&gt;next-&gt;next;</span><br><span class="line">    while(p !&#x3D; L)</span><br><span class="line">    &#123;</span><br><span class="line">        if(cur_e &#x3D;&#x3D; p-&gt;data)</span><br><span class="line">        &#123;</span><br><span class="line">            *next_e &#x3D; p-&gt;next-&gt;data;</span><br><span class="line">            return TRUE;</span><br><span class="line">        &#125;</span><br><span class="line">        p &#x3D; p-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    return FALSE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status ListInsert(LinkList *L, int i, ElemType e)</span><br><span class="line">&#123;</span><br><span class="line">    int j;</span><br><span class="line">    LinkList s, p &#x3D; L-&gt;next;</span><br><span class="line">    if(i&lt;1 || i&gt;LinkLength(L)+1)</span><br><span class="line">        return ERROR;</span><br><span class="line">    s &#x3D; (LinkList)malloc(sizeof(struct LNode));</span><br><span class="line">    for(j&#x3D;1; j&lt;i; j++)</span><br><span class="line">        p &#x3D; p-&gt;next;</span><br><span class="line">    s-&gt;data &#x3D; e;</span><br><span class="line">    p-&gt;next &#x3D; s-&gt;next;</span><br><span class="line">    p-&gt;next &#x3D; s;</span><br><span class="line">    if(p&#x3D;&#x3D;*L)</span><br><span class="line">        *L &#x3D; s;</span><br><span class="line">    return OK;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status ListDelete(LinkList *L, int i, ElemType *e)</span><br><span class="line">&#123;</span><br><span class="line">    int j;</span><br><span class="line">    LinkList q, p &#x3D; L-&gt;next;</span><br><span class="line">    if(i&lt;1 || i&gt;LinkLength(L))</span><br><span class="line">        return ERROR;</span><br><span class="line">    for(j&#x3D;1; j&lt;i; j++)</span><br><span class="line">        p &#x3D; p-&gt;next;</span><br><span class="line">    q &#x3D; p-&gt;next;</span><br><span class="line">    *e &#x3D; q-&gt;data;</span><br><span class="line">    p-&gt;next &#x3D; q-&gt;next;</span><br><span class="line">    if(*L &#x3D;&#x3D; q)</span><br><span class="line">        *L &#x3D; p;</span><br><span class="line">    free(q);</span><br><span class="line">    return OK;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void ListTraverse(LinkList L, void(*vi)(ElemType))</span><br><span class="line">&#123;</span><br><span class="line">    LinkList p&#x3D;L-&gt;next-&gt;next;</span><br><span class="line">    while(p !&#x3D; L-&gt;next)</span><br><span class="line">    &#123;</span><br><span class="line">        vi(p-&gt;data);</span><br><span class="line">        p &#x3D; p-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E6%9C%89%E5%B0%BE%E6%8C%87%E9%92%88%E7%9A%84%E5%8D%95%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-数据结构——双向链表" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/18/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8/">数据结构——带头结点的双向循环链表</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/18/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8/" class="archive-article-date">
+  	<time datetime="2019-09-18T13:39:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="双向循环链表"><a href="#双向循环链表" class="headerlink" title="双向循环链表"></a>双向循环链表</h1><p>前面介绍过循环链表和双向链表。双向链表是在单链表的每个结点中再加上一个前驱指针，使其指向其直接前驱；而循环链表是将单链表的末端结点的指针由空指针改为指向头结点，使整个链表形成一个闭环。下面用C语言来描述其各个基本的14个功能</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br></pre></td><td class="code"><pre><span class="line">void InitList(DuLinkList *L)</span><br><span class="line">&#123;</span><br><span class="line">    *L &#x3D; (DuLinkList)malloc(sizeof(DuLode));</span><br><span class="line">    if(!*L)</span><br><span class="line">        exit(OVERFLOW);</span><br><span class="line">    (*L)-&gt;prior &#x3D; (*L)-&gt;next &#x3D; *L;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void DestroyList(DuLinkList *L)</span><br><span class="line">&#123;</span><br><span class="line">    DuLinkList q, p &#x3D; (*L)-&gt;next;</span><br><span class="line">    while(p !&#x3D; *L)</span><br><span class="line">    &#123;   </span><br><span class="line">         q &#x3D; p-&gt;next;</span><br><span class="line">        free(p);</span><br><span class="line">        p &#x3D; q;</span><br><span class="line">    &#125;</span><br><span class="line">    free(*L);</span><br><span class="line">    *L &#x3D; NULL;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void ClearnList(DuLinkList L)</span><br><span class="line">&#123;</span><br><span class="line">    DuLinkList q, p &#x3D; L-&gt;next;</span><br><span class="line">    while(p !&#x3D; L)</span><br><span class="line">    &#123;   </span><br><span class="line">         q &#x3D; p-&gt;next;</span><br><span class="line">        free(p);</span><br><span class="line">        p &#x3D; q;</span><br><span class="line">    &#125;</span><br><span class="line">    L-&gt;prior &#x3D; L-&gt;next &#x3D; L;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status ListEmpty(DuLinkList L)</span><br><span class="line">&#123;</span><br><span class="line">    if(L-&gt;prior&#x3D;&#x3D;L &amp;&amp; L-&gt;next&#x3D;&#x3D;L)</span><br><span class="line">        return TRUE;</span><br><span class="line">    else</span><br><span class="line">        return FALSE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int ListLength(DuLinkList L)</span><br><span class="line">&#123;</span><br><span class="line">    int i &#x3D; 0;</span><br><span class="line">    DuLinkList p &#x3D; L-&gt;next;</span><br><span class="line">    while(p !&#x3D; L)</span><br><span class="line">    &#123;</span><br><span class="line">        i++;</span><br><span class="line">        p &#x3D; p-&gt;next</span><br><span class="line">    &#125;</span><br><span class="line">    return i;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status GetElem(DuLinkList L, int i, ElemType *e)</span><br><span class="line">&#123;&#x2F;&#x2F;待定</span><br><span class="line">    int j;</span><br><span class="line">    DuLinkList p &#x3D; L-&gt;next;</span><br><span class="line">    if(i&lt;1 &amp;&amp; i&gt;ListLength(L))</span><br><span class="line">        return ERROR;</span><br><span class="line">    for(j&#x3D;1; j&lt;i; j++)</span><br><span class="line">        p &#x3D; p-&gt;next;</span><br><span class="line">    *e &#x3D; p-&gt;data;</span><br><span class="line">    return OK;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int LocateElem(DuLinkList L, ElemType e, Status(*compare)(ElemType,ElemType))</span><br><span class="line">&#123;</span><br><span class="line">    int i &#x3D; 0;</span><br><span class="line">    DuLinkList p &#x3D; L-&gt;next;</span><br><span class="line">    whiel(p !&#x3D; L)</span><br><span class="line">    &#123;</span><br><span class="line">        i++;</span><br><span class="line">        if(*compare(e, p-&gt;data))</span><br><span class="line">            return i;</span><br><span class="line">        p &#x3D; p-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status PriorElem(DuLinkList L, ElemType cur_e, ElemType *pre_e)</span><br><span class="line">&#123;</span><br><span class="line">    DuLinkList p &#x3D; L-&gt;next-&gt;next;</span><br><span class="line">    while(p!&#x3D;L)</span><br><span class="line">    &#123;</span><br><span class="line">        if(p-&gt;data &#x3D;&#x3D; cur_e)</span><br><span class="line">        &#123;</span><br><span class="line">            *pre_e &#x3D; p-&gt;prior-&gt;data;</span><br><span class="line">            return TRUE;</span><br><span class="line">        &#125;</span><br><span class="line">        p &#x3D; p-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    return FALSE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Status NextElem(DuLinkList L, ElemType cur_e, ElemType *next_e)</span><br><span class="line">&#123;</span><br><span class="line">    DuLinkList p&#x3D;L-&gt;next;</span><br><span class="line">    while(p!&#x3D;L)</span><br><span class="line">    &#123;</span><br><span class="line">        if(p-&gt;data &#x3D;&#x3D; cur_e)</span><br><span class="line">        &#123;</span><br><span class="line">            *next_e &#x3D; p-&gt;next-&gt;data;</span><br><span class="line">            return TRUE; </span><br><span class="line">        &#125;</span><br><span class="line">        p &#x3D; p-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    return FALSE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">DuLinkList GetElemP(DuLinkList L, int i)</span><br><span class="line">&#123;</span><br><span class="line">    int j;</span><br><span class="line">    DuLinkList p &#x3D; L-&gt;next;</span><br><span class="line">    if(i&lt;1 || i&gt;ListLength(L))</span><br><span class="line">        return NULL;</span><br><span class="line">    for(j&#x3D;1; i&lt;i; j++)</span><br><span class="line">        p &#x3D; p-&gt;next;</span><br><span class="line">    return p;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status ListInsert(DuLinkList L, int i, ElemType e)</span><br><span class="line">&#123;</span><br><span class="line">    DuLinkList s, p &#x3D; L-&gt;next;</span><br><span class="line">    if(i&lt;1 || i&gt;ListLength(L)+1)</span><br><span class="line">        retrun ERROR;</span><br><span class="line">    s &#x3D; (DuLinkList)malloc(sizeof(DuLNode));</span><br><span class="line">    if(!s)</span><br><span class="line">        return OVERFLOW;</span><br><span class="line">    p &#x3D; GetElemP(L, i-1);</span><br><span class="line">    if(!p)</span><br><span class="line">        return ERROR;</span><br><span class="line">    s-&gt;data &#x3D; e;</span><br><span class="line">    S-&gt;prior &#x3D; p;</span><br><span class="line">    p-&gt;next &#x3D; s-&gt;next;</span><br><span class="line">    p-&gt;next-&gt;prior &#x3D; s;</span><br><span class="line">    p-&gt;next &#x3D; s;</span><br><span class="line">    return OK;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status ListDelete(DuLinkList L, int i, ElemType *e)</span><br><span class="line">&#123;</span><br><span class="line">    int j;</span><br><span class="line">    DuLinkList q, p&#x3D;p-&gt;next;</span><br><span class="line">    if(i&lt;1 || i&gt;ListLength(L))</span><br><span class="line">        return ERROR;</span><br><span class="line">    for(j&#x3D;1; j&lt;i; i++)</span><br><span class="line">        p &#x3D; p-&gt;next;</span><br><span class="line">    q &#x3D; p-&gt;next;</span><br><span class="line">    *e &#x3D; q-&gt;data;</span><br><span class="line">    p-&gt;next &#x3D; q-&gt;next;</span><br><span class="line">    q-&gt;next-&gt;prior &#x3D; p;</span><br><span class="line">    free(q);</span><br><span class="line">    return OK;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void ListTraverse(DuLinkList L, void(*vist)(ElemType))</span><br><span class="line">&#123;</span><br><span class="line">    DuLinkList p &#x3D; L-&gt;next;</span><br><span class="line">    while(p!&#x3D;L)</span><br><span class="line">    &#123;</span><br><span class="line">        vist(p-&gt;data);</span><br><span class="line">        p &#x3D; p-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void ListTraverseBack(DuLinkList L, void(*vist)(ElemType))</span><br><span class="line">&#123;</span><br><span class="line">    DuLinkList p &#x3D; L-&gt;prior;</span><br><span class="line">    while(p!&#x3D;L)</span><br><span class="line">    &#123;</span><br><span class="line">        vist(p-&gt;data);</span><br><span class="line">        p &#x3D; p-&gt;prior;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/18/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-数据结构——静态链表" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/16/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E9%9D%99%E6%80%81%E9%93%BE%E8%A1%A8/">数据结构——静态链表</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/16/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E9%9D%99%E6%80%81%E9%93%BE%E8%A1%A8/" class="archive-article-date">
+  	<time datetime="2019-09-16T13:42:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="静态链表（c语言实现）"><a href="#静态链表（c语言实现）" class="headerlink" title="静态链表（c语言实现）"></a>静态链表（c语言实现）</h1><p>前面介绍了静态链表的特点，对于一些舍去了指针的高级语言可以利用静态链表的思想来实现线性表。下面是静态链表的11个基本操作。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br></pre></td><td class="code"><pre><span class="line">void InitList(StLinkList L)&#x2F;&#x2F;构造一个空的静态链表</span><br><span class="line">&#123; </span><br><span class="line">    int i;</span><br><span class="line">    L[MAX_SIZE-1].cur &#x3D; 0;</span><br><span class="line">    for(i&#x3D;0; i&lt;MAX_SIZE-2; i++)</span><br><span class="line">        L[i].cur &#x3D; i+1;</span><br><span class="line">    L[MAX_SIZE-2].cur &#x3D; 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void CleanList(StLinkList L)</span><br><span class="line">&#123;</span><br><span class="line">    int i, j, k;</span><br><span class="line">    i &#x3D; L[MAX_SIZE-1].cur;</span><br><span class="line">    L[MAX_SIZE-1].cur &#x3D; 0;</span><br><span class="line">    j &#x3D; L[0].cur;</span><br><span class="line">    L[0].cur &#x3D; 1;</span><br><span class="line">    while(i)</span><br><span class="line">    &#123;</span><br><span class="line">        k &#x3D; i;</span><br><span class="line">         i &#x3D; L[i].cur;</span><br><span class="line">    &#125;</span><br><span class="line">    L[k].cur &#x3D; j;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status ListEmpty(StLinkList L)</span><br><span class="line">&#123;</span><br><span class="line">    if(L[MAX_SIZE-1].cur &#x3D;&#x3D; 0)</span><br><span class="line">        return TRUE;</span><br><span class="line">    else</span><br><span class="line">        return FALSE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int ListLength(StLinkList L)</span><br><span class="line">&#123;</span><br><span class="line">    int i &#x3D; 0,j;</span><br><span class="line">    j &#x3D; L[MAX_SIZE-1].cur;</span><br><span class="line">    while(j)</span><br><span class="line">    &#123;</span><br><span class="line">       j &#x3D; L[j].cur;</span><br><span class="line">       i++;</span><br><span class="line">    &#125;</span><br><span class="line">    return i;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status GetElem(StLinkList L, int i, ElemType *e)</span><br><span class="line">&#123;</span><br><span class="line">    int j, k;</span><br><span class="line">    if(i&lt;1 &amp;&amp; i&gt;ListLength(L))</span><br><span class="line">        return ERROR;</span><br><span class="line">    for(j&#x3D;1; j&lt;&#x3D;i; j++)</span><br><span class="line">        k &#x3D; L[k].cur;</span><br><span class="line">    *e &#x3D; L[k].data;</span><br><span class="line">    return OK;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int LocateElem(StLinkList L, ElemType e)</span><br><span class="line">&#123;</span><br><span class="line">    int i &#x3D; L[MAX_SIZE-1];</span><br><span class="line">    while(i &amp;&amp; L[i].data!&#x3D;e)</span><br><span class="line">        i &#x3D; L[i],cur;</span><br><span class="line">    return i;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status PriorElem(StLinkList L, ElemType cur_e, ElemType *pre_e)</span><br><span class="line">&#123;</span><br><span class="line">    int i, j</span><br><span class="line">    i &#x3D; L[MAX_SIZE-1];</span><br><span class="line">    while(i &amp;&amp; L[i].data!&#x3D;cur_e)</span><br><span class="line">    &#123;</span><br><span class="line">        j &#x3D; i;</span><br><span class="line">        i &#x3D; L[i].cur;</span><br><span class="line">    &#125;</span><br><span class="line">    if(i)</span><br><span class="line">    &#123;</span><br><span class="line">        *pre_e &#x3D; L[j].data;</span><br><span class="line">        return OK;</span><br><span class="line">    &#125;</span><br><span class="line">    return ERROR;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status NextElem(StLinkList L, ElemType cur_e, ElemType *next_e)</span><br><span class="line">&#123;</span><br><span class="line">    int i;</span><br><span class="line">    i &#x3D; L[MAX_SIZE-1];</span><br><span class="line">    while(i &amp;&amp; L[i].data!&#x3D;cur_e)</span><br><span class="line">        i &#x3D; L[i].cur;</span><br><span class="line">    if(i)</span><br><span class="line">    &#123;</span><br><span class="line">        *next_e &#x3D; L[i].data;</span><br><span class="line">        return OK;</span><br><span class="line">    &#125;</span><br><span class="line">    return ERROR;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status ListInsert(StLinkList L, int i, ElemType e)</span><br><span class="line">&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Status ListDelete(StLinkList L, int i, ElemType *e)</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void ListTraverse(StLinkList L, void(*vi)(ElemType))</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/16/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E9%9D%99%E6%80%81%E9%93%BE%E8%A1%A8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a><a class="extend next" rel="next" href="/archives/page/2/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/">Next &amp;raquo;</a>
     </nav>
   
 
@@ -471,9 +964,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
+		isHome: true,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
